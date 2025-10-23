@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Instagram } from 'lucide-react';
 
 /**
  * Componente Navbar
@@ -28,6 +29,13 @@ export default function Navbar() {
         {/* Menu Desktop - escondido em mobile */}
         <div className="hidden md:flex gap-8 items-center">
           <a 
+            href="#cronograma" 
+            className="text-base font-medium hover:text-primary transition-colors"
+            aria-label="Ir para seção de cronograma"
+          >
+            Cronograma
+          </a>
+          <a 
             href="#inscricao" 
             className="text-base font-medium hover:text-primary transition-colors"
             aria-label="Ir para seção de inscrição"
@@ -40,6 +48,15 @@ export default function Navbar() {
             aria-label="Ir para seção de parceiros"
           >
             Parceiros
+          </a>
+          <a 
+            href="https://instagram.com" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-primary transition-colors"
+            aria-label="Visite nosso Instagram"
+          >
+            <Instagram size={24} />
           </a>
         </div>
 
@@ -100,6 +117,14 @@ export default function Navbar() {
             {/* Links do menu */}
             <div className="flex flex-col gap-4 px-6 py-8">
               <a 
+                href="#cronograma" 
+                className="text-lg font-medium hover:text-primary transition-colors py-2"
+                onClick={closeMenu}
+                aria-label="Ir para seção de cronograma"
+              >
+                Cronograma
+              </a>
+              <a 
                 href="#inscricao" 
                 className="text-lg font-medium hover:text-primary transition-colors py-2"
                 onClick={closeMenu}
@@ -114,6 +139,17 @@ export default function Navbar() {
                 aria-label="Ir para seção de parceiros"
               >
                 Parceiros
+              </a>
+              <a 
+                href="https://instagram.com" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-lg font-medium hover:text-primary transition-colors py-2"
+                onClick={closeMenu}
+                aria-label="Visite nosso Instagram"
+              >
+                <Instagram size={24} />
+                <span>Instagram</span>
               </a>
             </div>
           </div>

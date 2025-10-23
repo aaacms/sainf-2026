@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import CronogramaSection from './components/CronogramaSection';
 import InscricaoSection from './components/InscricaoSection';
 import ParceirosSection from './components/ParceirosSection';
 import Footer from './components/Footer';
@@ -15,6 +16,7 @@ function App() {
       
       <main>
         <Hero />
+        <CronogramaSection />
         <InscricaoSection />
         <ParceirosSection />
       </main>
