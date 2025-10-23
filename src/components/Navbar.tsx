@@ -20,7 +20,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="navbar bg-base-100 px-6 py-4 border-b border-base-content/10" role="navigation" aria-label="Menu principal">
+    <nav className="navbar px-6 py-4" role="navigation" aria-label="Menu principal">
       <div className="container mx-auto max-w-7xl flex justify-between items-center">
         
         {/* Espaço vazio à esquerda - mantém design minimalista */}

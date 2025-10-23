@@ -18,7 +18,7 @@ export default function Footer() {
           
           {/* Copyright */}
           <p className="text-sm text-base-content/60">
-            © {currentYear} SAINF XXV. Todos os direitos reservados.
+            © {currentYear} SAINF XII. Todos os direitos reservados.
           </p>
 
           {/* Links opcionais (redes sociais, etc) */}

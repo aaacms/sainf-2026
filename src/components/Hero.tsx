@@ -1,7 +1,7 @@
 /**
  * Componente Hero
  * - Espaço para logo 300x300 (placeholder)
- * - Título SAINF XXV
+ * - Título SAINF XII
  * - Subtítulo com lorem ipsum
  * - Espaçamento generoso (minimalista)
  * - Responsivo mobile-first
@@ -15,41 +15,37 @@ export default function Hero() {
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16">
           
-          {/* Espaço para Logo 300x300 */}
+          {/* Logo - 50% do espaço */}
           <div 
-            className="flex-shrink-0 w-[300px] h-[300px] bg-base-200 rounded-lg flex items-center justify-center border border-base-content/10"
+            className="flex-1 w-full h-[400px] md:h-[600px] lg:h-[700px] flex items-center justify-center"
             role="img"
-            aria-label="Logo SAINF XXV - Espaço reservado para imagem"
+            aria-label="Logo SAINF XII"
           >
-            <div className="text-center text-base-content/40">
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                className="h-16 w-16 mx-auto mb-2" 
-                fill="none" 
-                viewBox="0 0 24 24" 
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-              <p className="text-sm">Logo 300×300</p>
-            </div>
+            <img 
+              src="/saint.png" 
+              alt="Logo SAINF XII"
+              className="w-full h-full object-cover"
+            />
           </div>
 
-          {/* Texto Hero */}
-          <div className="flex-1 text-center md:text-left max-w-2xl">
+          {/* Texto Hero - 50% do espaço */}
+          <div className="flex-1 text-center md:text-left">
             <h1 
               id="hero-title"
               className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6"
             >
-              SAINF XXV
+              SAINF XII
             </h1>
             
-            <p className="text-lg md:text-xl text-base-content/70 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+            <p className="text-lg md:text-xl text-base-content/70 leading-relaxed mb-4">
+              A Semana Acadêmica de Informática é um evento anual que reúne estudantes para uma semana de aprendizado e networking através de minicursos, palestras com profissionais da área e workshops práticos.
             </p>
 
-            {/* CTA Buttons (opcional) */}
+            <p className="text-lg md:text-xl text-base-content/70 leading-relaxed">
+              Participe da 12ª edição e aproveite para expandir seus conhecimentos, conhecer novas tecnologias e conectar-se com a comunidade tech!
+            </p>
+
+            {/* CTA Buttons */}
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a 
                 href="#inscricao" 
@@ -59,11 +55,11 @@ export default function Hero() {
                 Inscreva-se Agora
               </a>
               <a 
-                href="#parceiros" 
+                href="#sobre" 
                 className="btn btn-outline btn-lg"
-                aria-label="Conhecer nossos parceiros"
+                aria-label="Saiba mais sobre a SAINF"
               >
-                Nossos Parceiros
+                Saiba Mais
               </a>
             </div>
           </div>
