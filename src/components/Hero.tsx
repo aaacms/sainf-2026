@@ -69,7 +69,9 @@ export default function Hero() {
             {/* CTA Buttons */}
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a 
-                href="#inscricao" 
+                href="https://forms.gle/ohKJEorKojBA1UYF9" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn-primary btn-lg"
                 aria-label="Ir para formulário de inscrição"
               >

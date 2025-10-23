@@ -21,28 +21,16 @@ export default function Footer() {
             © {currentYear} SAINF XII. Todos os direitos reservados.
           </p>
 
-          {/* Links opcionais (redes sociais, etc) */}
+          {/* Links de redes sociais */}
           <div className="flex gap-6">
             <a 
-              href="#" 
+              href="https://www.instagram.com/sainf_ufsm/" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm text-base-content/60 hover:text-primary transition-colors"
               aria-label="Instagram"
             >
               Instagram
-            </a>
-            <a 
-              href="#" 
-              className="text-sm text-base-content/60 hover:text-primary transition-colors"
-              aria-label="LinkedIn"
-            >
-              LinkedIn
-            </a>
-            <a 
-              href="#" 
-              className="text-sm text-base-content/60 hover:text-primary transition-colors"
-              aria-label="Email de contato"
-            >
-              Contato
             </a>
           </div>
         </div>

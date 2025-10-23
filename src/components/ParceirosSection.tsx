@@ -1,3 +1,5 @@
+import { Instagram } from 'lucide-react';
+
 /**
  * Componente Seção de Parceiros
  * - Grid 4 por linha (desktop)
@@ -28,7 +30,7 @@ export default function ParceirosSection() {
             Parceiros
           </h2>
           <p className="text-lg md:text-xl text-base-content/70 max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Conheça as organizações que apoiam este evento.
+            Conheça as empresas e organizações que tornam a SAINF XII possível. Juntos, construímos uma semana de aprendizado e networking inesquecível!
           </p>
         </div>
 
@@ -63,11 +65,25 @@ export default function ParceirosSection() {
           ))}
         </div>
 
-        {/* Nota informativa */}
-        <div className="mt-12 text-center">
-          <p className="text-sm text-base-content/50">
-            Quer se tornar um parceiro? Entre em contato conosco.
-          </p>
+        {/* Call to Action para novos parceiros */}
+        <div className="mt-16 text-center">
+          <div className="card bg-base-200 shadow-lg max-w-2xl mx-auto">
+            <div className="card-body items-center text-center">
+              <h3 className="card-title text-2xl mb-3">Seja um Parceiro!</h3>
+              <p className="text-base-content/70 mb-6">
+                Quer apoiar a SAINF e conectar-se com a comunidade acadêmica? Entre em contato conosco pelo Instagram!
+              </p>
+              <a 
+                href="https://www.instagram.com/sainf_ufsm/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="btn btn-primary btn-lg gap-2"
+              >
+                <Instagram size={24} />
+                Quer ser parceiro?
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

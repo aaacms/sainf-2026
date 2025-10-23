@@ -49,9 +49,11 @@ export default function Navbar() {
                 Revista ComInG
               </Link>
               <a 
-                href="#inscricao" 
+                href="https://forms.gle/ohKJEorKojBA1UYF9" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-base font-medium hover:text-primary transition-colors"
-                aria-label="Ir para seção de inscrição"
+                aria-label="Ir para formulário de inscrição"
               >
                 Inscrição
               </a>
@@ -83,7 +85,7 @@ export default function Navbar() {
             </>
           )}
           <a 
-            href="https://instagram.com" 
+            href="https://www.instagram.com/sainf_ufsm/" 
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-primary transition-colors"
@@ -169,10 +171,12 @@ export default function Navbar() {
                     <span>Revista ComInG</span>
                   </Link>
                   <a 
-                    href="#inscricao" 
+                    href="https://forms.gle/ohKJEorKojBA1UYF9" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-lg font-medium hover:text-primary transition-colors py-2"
                     onClick={closeMenu}
-                    aria-label="Ir para seção de inscrição"
+                    aria-label="Ir para formulário de inscrição"
                   >
                     Inscrição
                   </a>
@@ -207,7 +211,7 @@ export default function Navbar() {
                 </>
               )}
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/sainf_ufsm/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-lg font-medium hover:text-primary transition-colors py-2"

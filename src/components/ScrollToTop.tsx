@@ -39,7 +39,7 @@ export default function ScrollToTop() {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 left-6 z-50 btn btn-primary btn-circle shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in"
+          className="fixed bottom-6 right-6 z-50 btn btn-primary btn-circle shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in"
           aria-label="Voltar ao topo da página"
         >
           <ArrowUp className="w-6 h-6" />

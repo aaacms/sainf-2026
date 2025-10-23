@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { BookOpen, Calendar, FileText, Mail, Award, Users, Sparkles, ArrowLeft } from 'lucide-react';
+import { BookOpen, Calendar, FileText, Mail, Award, Users, Sparkles, ArrowLeft, Send } from 'lucide-react';
 
 /**
  * Componente RevistaComingSection
@@ -234,6 +234,30 @@ export default function RevistaComingSection() {
                   jwnogueira@inf.ufsm.br
                 </a>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Botão de Submissão em Destaque */}
+        <div className="mt-12">
+          <div className="card bg-gradient-to-br from-primary to-secondary text-primary-content shadow-2xl">
+            <div className="card-body items-center text-center">
+              <h3 className="card-title text-3xl mb-4">Pronto para Submeter?</h3>
+              <p className="text-lg mb-6 max-w-2xl">
+                Envie seu resumo através do formulário oficial e garanta sua participação na SAINF XII!
+              </p>
+              <a 
+                href="https://forms.gle/tRcGSjJhzG8hJE226" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="btn btn-lg bg-white text-primary hover:bg-base-100 gap-2 shadow-lg"
+              >
+                <Send size={24} />
+                Submeter Resumo Agora
+              </a>
+              <p className="text-sm mt-4 opacity-90">
+                Prazo: até 30 de outubro de 2025
+              </p>
             </div>
           </div>
         </div>

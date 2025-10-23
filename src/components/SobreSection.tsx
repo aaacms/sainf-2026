@@ -147,7 +147,9 @@ export default function SobreSection() {
         {/* CTA Final */}
         <div className="text-center mt-12">
           <a 
-            href="#inscricao" 
+            href="https://forms.gle/ohKJEorKojBA1UYF9" 
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn btn-primary btn-lg"
             aria-label="Fazer inscrição na SAINF XII"
           >

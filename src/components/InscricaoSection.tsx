@@ -19,11 +19,11 @@ export default function InscricaoSection() {
         </h2>
         
         <p className="text-lg md:text-xl text-base-content/70 mb-10 max-w-2xl mx-auto">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faça sua inscrição através do nosso formulário e garanta sua participação no evento.
+          Não perca a oportunidade de participar da 12ª edição da SAINF! Faça sua inscrição através do nosso formulário e garanta sua participação no evento.
         </p>
 
         <a 
-          href="https://forms.google.com" 
+          href="https://forms.gle/ohKJEorKojBA1UYF9" 
           target="_blank" 
           rel="noopener noreferrer"
           className="btn btn-primary btn-lg"
