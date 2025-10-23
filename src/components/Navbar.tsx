@@ -1,14 +1,17 @@
 import { useState } from 'react';
-import { Instagram } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
+import { Instagram, BookOpen } from 'lucide-react';
 
 /**
  * Componente Navbar
  * - Sem logo à esquerda
- * - Menu à direita com Inscrição e Parceiros
+ * - Menu à direita com Cronograma, Revista ComInG, Inscrição e Parceiros
  * - Mobile: menu abre como modal/dialog com botão fechar no topo direito
  * - Acessível para leitores de tela
  */
 export default function Navbar() {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -28,27 +31,57 @@ export default function Navbar() {
 
         {/* Menu Desktop - escondido em mobile */}
         <div className="hidden md:flex gap-8 items-center">
-          <a 
-            href="#cronograma" 
-            className="text-base font-medium hover:text-primary transition-colors"
-            aria-label="Ir para seção de cronograma"
-          >
-            Cronograma
-          </a>
-          <a 
-            href="#inscricao" 
-            className="text-base font-medium hover:text-primary transition-colors"
-            aria-label="Ir para seção de inscrição"
-          >
-            Inscrição
-          </a>
-          <a 
-            href="#parceiros" 
-            className="text-base font-medium hover:text-primary transition-colors"
-            aria-label="Ir para seção de parceiros"
-          >
-            Parceiros
-          </a>
+          {isHomePage ? (
+            <>
+              <a 
+                href="#cronograma" 
+                className="text-base font-medium hover:text-primary transition-colors"
+                aria-label="Ir para seção de cronograma"
+              >
+                Cronograma
+              </a>
+              <Link 
+                to="/incoming" 
+                className="flex items-center gap-2 text-base font-medium hover:text-primary transition-colors"
+                aria-label="Ir para página da Revista ComInG"
+              >
+                <BookOpen size={18} />
+                Revista ComInG
+              </Link>
+              <a 
+                href="#inscricao" 
+                className="text-base font-medium hover:text-primary transition-colors"
+                aria-label="Ir para seção de inscrição"
+              >
+                Inscrição
+              </a>
+              <a 
+                href="#parceiros" 
+                className="text-base font-medium hover:text-primary transition-colors"
+                aria-label="Ir para seção de parceiros"
+              >
+                Parceiros
+              </a>
+            </>
+          ) : (
+            <>
+              <Link 
+                to="/" 
+                className="text-base font-medium hover:text-primary transition-colors"
+                aria-label="Voltar para página inicial"
+              >
+                Início
+              </Link>
+              <Link 
+                to="/incoming" 
+                className="flex items-center gap-2 text-base font-medium text-primary"
+                aria-label="Página da Revista ComInG"
+              >
+                <BookOpen size={18} />
+                Revista ComInG
+              </Link>
+            </>
+          )}
           <a 
             href="https://instagram.com" 
             target="_blank"
@@ -116,30 +149,63 @@ export default function Navbar() {
 
             {/* Links do menu */}
             <div className="flex flex-col gap-4 px-6 py-8">
-              <a 
-                href="#cronograma" 
-                className="text-lg font-medium hover:text-primary transition-colors py-2"
-                onClick={closeMenu}
-                aria-label="Ir para seção de cronograma"
-              >
-                Cronograma
-              </a>
-              <a 
-                href="#inscricao" 
-                className="text-lg font-medium hover:text-primary transition-colors py-2"
-                onClick={closeMenu}
-                aria-label="Ir para seção de inscrição"
-              >
-                Inscrição
-              </a>
-              <a 
-                href="#parceiros" 
-                className="text-lg font-medium hover:text-primary transition-colors py-2"
-                onClick={closeMenu}
-                aria-label="Ir para seção de parceiros"
-              >
-                Parceiros
-              </a>
+              {isHomePage ? (
+                <>
+                  <a 
+                    href="#cronograma" 
+                    className="text-lg font-medium hover:text-primary transition-colors py-2"
+                    onClick={closeMenu}
+                    aria-label="Ir para seção de cronograma"
+                  >
+                    Cronograma
+                  </a>
+                  <Link 
+                    to="/incoming" 
+                    className="flex items-center gap-2 text-lg font-medium hover:text-primary transition-colors py-2"
+                    onClick={closeMenu}
+                    aria-label="Ir para página da Revista ComInG"
+                  >
+                    <BookOpen size={24} />
+                    <span>Revista ComInG</span>
+                  </Link>
+                  <a 
+                    href="#inscricao" 
+                    className="text-lg font-medium hover:text-primary transition-colors py-2"
+                    onClick={closeMenu}
+                    aria-label="Ir para seção de inscrição"
+                  >
+                    Inscrição
+                  </a>
+                  <a 
+                    href="#parceiros" 
+                    className="text-lg font-medium hover:text-primary transition-colors py-2"
+                    onClick={closeMenu}
+                    aria-label="Ir para seção de parceiros"
+                  >
+                    Parceiros
+                  </a>
+                </>
+              ) : (
+                <>
+                  <Link 
+                    to="/" 
+                    className="text-lg font-medium hover:text-primary transition-colors py-2"
+                    onClick={closeMenu}
+                    aria-label="Voltar para página inicial"
+                  >
+                    Início
+                  </Link>
+                  <Link 
+                    to="/incoming" 
+                    className="flex items-center gap-2 text-lg font-medium text-primary py-2"
+                    onClick={closeMenu}
+                    aria-label="Página da Revista ComInG"
+                  >
+                    <BookOpen size={24} />
+                    <span>Revista ComInG</span>
+                  </Link>
+                </>
+              )}
               <a 
                 href="https://instagram.com" 
                 target="_blank"

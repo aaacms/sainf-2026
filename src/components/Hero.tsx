@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+import { Sparkles } from 'lucide-react';
+
 /**
  * Componente Hero
  * - Espaço para logo 300x300 (placeholder)
@@ -44,6 +47,24 @@ export default function Hero() {
             <p className="text-lg md:text-xl text-base-content/70 leading-relaxed">
               Participe da 12ª edição e aproveite para expandir seus conhecimentos, conhecer novas tecnologias e conectar-se com a comunidade tech!
             </p>
+
+            {/* Novidade Revista ComInG */}
+            <div className="mt-8 p-4 bg-primary/10 rounded-lg border-2 border-primary/30">
+              <div className="flex items-center gap-2 mb-2">
+                <Sparkles className="text-primary" size={20} />
+                <span className="font-bold text-primary">Novidade 2025!</span>
+              </div>
+              <p className="text-base text-base-content/80">
+                Este ano teremos a <strong>Revista ComInG</strong> para publicação de artigos científicos! 
+                Submeta seu trabalho e apresente na SAINF.
+              </p>
+              <Link 
+                to="/incoming" 
+                className="link link-primary text-sm mt-2 inline-block"
+              >
+                Saiba mais →
+              </Link>
+            </div>
 
             {/* CTA Buttons */}
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
