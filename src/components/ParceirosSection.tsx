@@ -36,8 +36,8 @@ export default function ParceirosSection() {
     {
       id: 5,
       nome: "Casa do Pastel",
-      logo: 'null',
-      link: 'https://www.instagram.com/casadopastel/',
+      logo: '/parceiros/logoCasaDoPastel.png',
+      link: 'https://www.instagram.com/casadopastelpastelaria/',
     },
     {
       id: 6,
