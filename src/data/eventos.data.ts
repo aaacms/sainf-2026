@@ -172,9 +172,9 @@ export const cronogramaEventos: DiaEvento[] = [
       },
       {
         horario: "13:00 - 14:00",
-        titulo: "TCCs",
-        local: "Auditório Wilson Aita - CT Anexo C",
-        descricao: "Veja as principais linhas de pesquisa dos alunos da Informática",
+        titulo: "-",
+        local: "-",
+        descricao: "-",
         tipo: "workshop"
       },
       {
