@@ -48,7 +48,7 @@ export const cronogramaEventos: DiaEvento[] = [
       },
       {
         horario: "13:00 - 14:00",
-        titulo: "Revista do prof. Giovani Librelotto",
+        titulo: "Revista ComInG - Pitch dos Artigos",
         local: "Auditório do INPE",
         descricao: "",
         tipo: "workshop"
@@ -96,14 +96,14 @@ export const cronogramaEventos: DiaEvento[] = [
       },
       {
         horario: "09:00 - 10:30",
-        titulo: "Palestra 3 - Laura Boemo - BitMarias + WoMakersCode (confirmado)",
+        titulo: "Palestra 3 - Laura Boemo - BitMarias + WoMakersCode",
         local: "Auditório do INPE",
         descricao: "",
         tipo: "palestra"
       },
       {
         horario: "10:30 - 12:00",
-        titulo: "Palestra 4 - Santos Megatecnologia (confirmado)",
+        titulo: "Palestra 4 - Santos Viana - Megatecnologia",
         local: "Auditório do INPE",
         descricao: "Confira os projetos do PET Saúde e as oportunidades de bolsas disponíveis",
         tipo: "palestra"
@@ -117,14 +117,14 @@ export const cronogramaEventos: DiaEvento[] = [
       },
       {
         horario: "13:00 - 14:00",
-        titulo: "Revista do prof. Giovani Librelotto",
+        titulo: "Revista ComInG - Pitch dos Artigos",
         local: "Auditório do INPE",
-        descricao: "Veja as apresentações dos artigos que serão publicados na revista do prof. Giovani Librelotto",
+        descricao: "Veja as apresentações dos artigos que serão publicados na revista ComInG",
         tipo: "workshop"
       },
       {
         horario: "14:00 - 15:30",
-        titulo: "Minicurso Virtualização/Storage Distribuído",
+        titulo: "Minicurso Virtualização/Storage Distribuído - Scherm",
         local: "Auditório do INPE",
         descricao: "",
         tipo: "workshop"
@@ -132,13 +132,13 @@ export const cronogramaEventos: DiaEvento[] = [
       {
         horario: "15:30 - 16:00",
         titulo: "Coffee Break",
-        local: "Hall do CT",
+        local: "Hall do INPE ",
         descricao: "Ninguém é de ferro, por isso vamos pegar um coffe hehe",
         tipo: "coffee"
       },
       {
         horario: "16:00 - 17:00",
-        titulo: "Minicurso Virtualização/Storage Distribuído",
+        titulo: "Minicurso Virtualização/Storage Distribuído - Scherm",
         local: "Auditório do INPE",
         descricao: "",
         tipo: "workshop"
@@ -152,21 +152,28 @@ export const cronogramaEventos: DiaEvento[] = [
       {
         horario: "08:30 - 09:00",
         titulo: "Credenciamento",
-        local: "Auditório Wilson Aita - CT Anexo C",
+        local: "Auditório Pércio Reis - CT Anexo C",
         descricao: "Recepção dos participantes e entrega de materiais",
         tipo: "credenciamento"
       },
       {
         horario: "09:00 - 10:30",
         titulo: "Palestra Scherm",
-        local: "Auditório Wilson Aita - CT Anexo C",
+        local: "Auditório Pércio Reis - CT Anexo C",
         descricao: "",
         tipo: "palestra"
       },
       {
-        horario: "10:30 - 12:00",
+        horario: "10:30 - 11:15",
+        titulo: "Coffee Break",
+        local: "Hall do CT",
+        descricao: "Agora está na hora do descanso e bora de coffe break!",
+        tipo: "coffee"
+      },
+      {
+        horario: "11:15 - 12:00",
         titulo: "Encerramento + Sorteio de premiação pros presentes",
-        local: "Auditório Wilson Aita - CT Anexo C",
+        local: "Auditório Pércio Reis - CT Anexo C",
         descricao: "",
         tipo: "palestra"
       },
@@ -178,30 +185,16 @@ export const cronogramaEventos: DiaEvento[] = [
         tipo: "almoco"
       },
       {
-        horario: "13:00 - 14:00",
-        titulo: "-",
-        local: "-",
-        descricao: "-",
-        tipo: "workshop"
-      },
-      {
-        horario: "14:00 - 15:30",
-        titulo: "Maratona de Programação",
-        local: "Auditório Wilson Aita - CT Anexo C",
+        horario: "14:00 - 18:30",
+        titulo: "Maratona de Programação - Nível Iniciante",
+        local: "Sala 334 - Anexo Principal CT",
         descricao: "Prepare-se para a principal competição de programação da UFSM!",
         tipo: "workshop"
       },
       {
-        horario: "15:30 - 16:00",
-        titulo: "Coffee Break",
-        local: "Hall do CT",
-        descricao: "Agora está na hora do descanso e bora de coffe break!",
-        tipo: "coffee"
-      },
-      {
-        horario: "16:00 - 17:00",
-        titulo: "Maratona de Programação",
-        local: "Auditório Wilson Aita - CT Anexo C",
+        horario: "14:00 - 18:30",
+        titulo: "Maratona de Programação - Nível Avançado",
+        local: "Sala 337 - Anexo Principal CT",
         descricao: "Prepare-se para a principal competição de programação da UFSM!",
         tipo: "workshop"
       }
