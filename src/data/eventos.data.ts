@@ -55,7 +55,7 @@ export const cronogramaEventos: DiaEvento[] = [
       },
       {
         horario: "14:00 - 15:30",
-        titulo: "Minicurso Python",
+        titulo: "Minicurso IA e Sistemas de Recomendação",
         local: "Auditório do INPE",
         descricao: "",
         tipo: "workshop"
@@ -69,7 +69,7 @@ export const cronogramaEventos: DiaEvento[] = [
       },
       {
         horario: "16:00 - 17:00",
-        titulo: "Minicurso Python",
+        titulo: "Minicurso IA e Sistemas de Recomendação",
         local: "Auditório do INPE",
         descricao: "",
         tipo: "workshop"
