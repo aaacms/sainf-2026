@@ -39,6 +39,24 @@ export default function ParceirosSection() {
       logo: '/parceiros/mimabolsas.jpeg',
       link: 'https://www.instagram.com/mima.bolsas/',
     },
+    {
+      id: 7,
+      nome: "Scherm",
+      logo: '/parceiros/schermlogo.svg',
+      link: 'https://scherm.com.br',
+    },
+    {
+      id: 8,
+      nome: "BitMarias",
+      logo: '/parceiros/bitmarias.png',
+      link: null,
+    }
+    ,{
+      id: 9,
+      nome: "WoMakersCode",
+      logo: '/parceiros/womakerscode.png',
+      link: null,
+    }
     
   ];
 
