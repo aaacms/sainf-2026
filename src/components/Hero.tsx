@@ -48,22 +48,43 @@ export default function Hero() {
               Participe da 12ª edição e aproveite para expandir seus conhecimentos, conhecer novas tecnologias e conectar-se com a comunidade tech!
             </p>
 
-            {/* Novidade Revista ComInG */}
-            <div className="mt-8 p-4 bg-primary/10 rounded-lg border-2 border-primary/30">
-              <div className="flex items-center gap-2 mb-2">
-                <Sparkles className="text-primary" size={20} />
-                <span className="font-bold text-primary">Novidade 2025!</span>
+            {/* Novidades 2025 */}
+            <div className="mt-8 space-y-4">
+              {/* Revista ComInG */}
+              <div className="p-4 bg-primary/10 rounded-lg border-2 border-primary/30">
+                <div className="flex items-center gap-2 mb-2">
+                  <Sparkles className="text-primary" size={20} />
+                  <span className="font-bold text-primary">Novidade 2025!</span>
+                </div>
+                <p className="text-base text-base-content/80">
+                  Este ano teremos a <strong>Revista ComInG</strong> para publicação de artigos científicos! 
+                  Submeta seu trabalho e apresente na SAINF.
+                </p>
+                <Link 
+                  to="/incoming" 
+                  className="link link-primary text-sm mt-2 inline-block"
+                >
+                  Saiba mais →
+                </Link>
               </div>
-              <p className="text-base text-base-content/80">
-                Este ano teremos a <strong>Revista ComInG</strong> para publicação de artigos científicos! 
-                Submeta seu trabalho e apresente na SAINF.
-              </p>
-              <Link 
-                to="/incoming" 
-                className="link link-primary text-sm mt-2 inline-block"
-              >
-                Saiba mais →
-              </Link>
+
+              {/* Maratona de Programação */}
+              <div className="p-4 bg-secondary/10 rounded-lg border-2 border-secondary/30">
+                <div className="flex items-center gap-2 mb-2">
+                  <Sparkles className="text-secondary" size={20} />
+                  <span className="font-bold text-secondary">Maratona de Programação!</span>
+                </div>
+                <p className="text-base text-base-content/80">
+                  Inscreva seu trio na <strong>Maratona de Programação</strong> da SAINF 25! 
+                  5 horas de desafios, dois níveis de dificuldade.
+                </p>
+                <Link 
+                  to="/maratona" 
+                  className="link link-secondary text-sm mt-2 inline-block"
+                >
+                  Saiba mais →
+                </Link>
+              </div>
             </div>
 
             {/* CTA Buttons */}

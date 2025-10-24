@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Calendar, Clock, MapPin, User } from 'lucide-react';
+import { Calendar, Clock, MapPin, Rocket, User } from 'lucide-react';
 import { cronogramaEventos, Evento } from '../data/eventos.data';
 
 /**
@@ -96,24 +96,24 @@ export default function CronogramaSection() {
                                         <pre data-prefix=">" className={`${getEventColor(evento.tipo)}`}>
                                             <code className="font-bold">{evento.horario}</code>
                                         </pre>
-                                        <div className='ml-3'>
-                                            <span>📌</span> 
+                                        <div className='ml-5 flex items-center'>
+                                            <span><Rocket size={15} /></span> 
                                             <code className="font-semibold text-base-content ml-2">{evento.titulo}</code>
                                         </div>
                                         {evento.palestrante && (
-                                            <code className="flex items-center gap-2 ml-3">
+                                            <code className="flex items-center gap-2 ml-5">
                                                 <User size={14} className="inline" />
                                                 {evento.palestrante}
                                             </code>
                                         )}
                                         {evento.local && (
-                                            <code className="flex items-center gap-2 ml-3">
+                                            <code className="flex items-center gap-2 ml-5">
                                                 <MapPin size={14} className="inline" />
                                                 {evento.local}
                                             </code>
                                         )}
                                         {evento.descricao && (
-                                            <pre data-prefix="ℹ️">
+                                            <pre data-prefix="ℹ️" className='ml-2'>
                                                 <code className="text-sm text-base-content/70">{evento.descricao}</code>
                                             </pre>
                                         )}

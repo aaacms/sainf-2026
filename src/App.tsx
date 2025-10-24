@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import HomePage from './pages/HomePage';
 import IncomingPage from './pages/IncomingPage';
+import MaratonaPage from './pages/MaratonaPage';
 
 /**
  * Componente principal da aplicação
@@ -19,6 +20,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/incoming" element={<IncomingPage />} />
+            <Route path="/maratona" element={<MaratonaPage />} />
           </Routes>
         </main>
         
