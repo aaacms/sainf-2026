@@ -10,12 +10,6 @@ export default function ParceirosSection() {
   // Array de parceiros
   const parceiros = [
     {
-      id: 1,
-      nome: "Parceiro 1",
-      logo: null,
-      link: null,
-    },
-    {
       id: 2,
       nome: "PET-SI",
       logo: "/parceiros/logopetsi.svg",
@@ -45,18 +39,7 @@ export default function ParceirosSection() {
       logo: '/parceiros/mimabolsas.jpeg',
       link: 'https://www.instagram.com/mima.bolsas/',
     },
-    {
-      id: 7,
-      nome: "Parceiro 7",
-      logo: null,
-      link: null,
-    },
-    {
-      id: 8,
-      nome: "Parceiro 8",
-      logo: null,
-      link: null,
-    },
+    
   ];
 
   return (
