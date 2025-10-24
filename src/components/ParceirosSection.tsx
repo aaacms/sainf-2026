@@ -4,14 +4,60 @@ import { Instagram } from 'lucide-react';
  * Componente Seção de Parceiros
  * - Grid 4 por linha (desktop)
  * - Responsivo: 2 por linha (tablet), 1 por linha (mobile)
- * - Placeholders para logos dos parceiros
+ * - Logos dos parceiros
  */
 export default function ParceirosSection() {
-  // Array de 8 parceiros placeholder (pode expandir depois)
-  const parceiros = Array.from({ length: 8 }, (_, i) => ({
-    id: i + 1,
-    nome: `Parceiro ${i + 1}`,
-  }));
+  // Array de parceiros
+  const parceiros = [
+    {
+      id: 1,
+      nome: "Parceiro 1",
+      logo: null,
+      link: null,
+    },
+    {
+      id: 2,
+      nome: "Parceiro 2",
+      logo: null,
+      link: null,
+    },
+    {
+      id: 3,
+      nome: "PET-CC",
+      logo: "/parceiros/petcc.png",
+      link: "https://www.ufsm.br/pet/computacao",
+    },
+    {
+      id: 4,
+      nome: "Parceiro 4",
+      logo: null,
+      link: null,
+    },
+    {
+      id: 5,
+      nome: "Parceiro 5",
+      logo: null,
+      link: null,
+    },
+    {
+      id: 6,
+      nome: "Parceiro 6",
+      logo: null,
+      link: null,
+    },
+    {
+      id: 7,
+      nome: "Parceiro 7",
+      logo: null,
+      link: null,
+    },
+    {
+      id: 8,
+      nome: "Parceiro 8",
+      logo: null,
+      link: null,
+    },
+  ];
 
   return (
     <section 
@@ -40,29 +86,57 @@ export default function ParceirosSection() {
           role="list"
           aria-label="Lista de parceiros do evento"
         >
-          {parceiros.map((parceiro) => (
-            <div 
-              key={parceiro.id}
-              className="bg-base-200 rounded-lg p-8 flex items-center justify-center border border-base-content/10 hover:border-primary/50 transition-all hover:scale-105 aspect-square"
-              role="listitem"
-            >
-              <div className="text-center">
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  className="h-12 w-12 mx-auto mb-3 text-base-content/40" 
-                  fill="none" 
-                  viewBox="0 0 24 24" 
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
-                <p className="text-sm text-base-content/60">
-                  Logo {parceiro.nome}
-                </p>
+          {parceiros.map((parceiro) => {
+            const content = (
+              <>
+                {parceiro.logo ? (
+                  <img 
+                    src={parceiro.logo} 
+                    alt={`Logo ${parceiro.nome}`}
+                    className="max-w-full max-h-full object-contain"
+                  />
+                ) : (
+                  <div className="text-center">
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      className="h-12 w-12 mx-auto mb-3 text-base-content/40" 
+                      fill="none" 
+                      viewBox="0 0 24 24" 
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
+                    <p className="text-sm text-base-content/60">
+                      Logo {parceiro.nome}
+                    </p>
+                  </div>
+                )}
+              </>
+            );
+
+            return parceiro.link ? (
+              <a
+                key={parceiro.id}
+                href={parceiro.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-base-200 rounded-lg p-8 flex items-center justify-center border border-base-content/10 hover:border-primary/50 transition-all hover:scale-105 aspect-square cursor-pointer"
+                role="listitem"
+                aria-label={`Visitar site de ${parceiro.nome}`}
+              >
+                {content}
+              </a>
+            ) : (
+              <div
+                key={parceiro.id}
+                className="bg-base-200 rounded-lg p-8 flex items-center justify-center border border-base-content/10 hover:border-primary/50 transition-all hover:scale-105 aspect-square"
+                role="listitem"
+              >
+                {content}
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Call to Action para novos parceiros */}
