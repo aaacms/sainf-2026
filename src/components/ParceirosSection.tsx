@@ -17,33 +17,33 @@ export default function ParceirosSection() {
     },
     {
       id: 2,
-      nome: "Parceiro 2",
-      logo: null,
-      link: null,
+      nome: "PET-SI",
+      logo: "/parceiros/logopetsi.svg",
+      link: "https://www.instagram.com/petsi_ufsm/",
     },
     {
       id: 3,
       nome: "PET-CC",
       logo: "/parceiros/petcc.png",
-      link: "https://www.ufsm.br/pet/computacao",
+      link: "https://www.instagram.com/petcc_ufsm/",
     },
     {
       id: 4,
-      nome: "Parceiro 4",
-      logo: null,
-      link: null,
+      nome: "Torriani Restaurantes",
+      logo: '/parceiros/torriani.jpeg',
+      link: 'https://www.instagram.com/torriani.restaurantes?igsh=MW9keHQ3MGJhYW02Ng==',
     },
     {
       id: 5,
-      nome: "Parceiro 5",
-      logo: null,
-      link: null,
+      nome: "Casa do Pastel",
+      logo: 'null',
+      link: 'https://www.instagram.com/casadopastel/',
     },
     {
       id: 6,
-      nome: "Parceiro 6",
-      logo: null,
-      link: null,
+      nome: "Mima Bolsas",
+      logo: '/parceiros/mimabolsas.jpeg',
+      link: 'https://www.instagram.com/mima.bolsas/',
     },
     {
       id: 7,
@@ -60,16 +60,16 @@ export default function ParceirosSection() {
   ];
 
   return (
-    <section 
-      id="parceiros" 
+    <section
+      id="parceiros"
       className="py-24 md:py-32 px-6"
       aria-labelledby="parceiros-title"
     >
       <div className="container mx-auto max-w-6xl">
-        
+
         {/* Título da seção */}
         <div className="text-center mb-16">
-          <h2 
+          <h2
             id="parceiros-title"
             className="text-4xl md:text-5xl font-bold mb-6"
           >
@@ -81,7 +81,7 @@ export default function ParceirosSection() {
         </div>
 
         {/* Grid de parceiros */}
-        <div 
+        <div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8"
           role="list"
           aria-label="Lista de parceiros do evento"
@@ -90,18 +90,18 @@ export default function ParceirosSection() {
             const content = (
               <>
                 {parceiro.logo ? (
-                  <img 
-                    src={parceiro.logo} 
+                  <img
+                    src={parceiro.logo}
                     alt={`Logo ${parceiro.nome}`}
                     className="max-w-full max-h-full object-contain"
                   />
                 ) : (
                   <div className="text-center">
-                    <svg 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      className="h-12 w-12 mx-auto mb-3 text-base-content/40" 
-                      fill="none" 
-                      viewBox="0 0 24 24" 
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-12 w-12 mx-auto mb-3 text-base-content/40"
+                      fill="none"
+                      viewBox="0 0 24 24"
                       stroke="currentColor"
                       aria-hidden="true"
                     >
@@ -147,9 +147,9 @@ export default function ParceirosSection() {
               <p className="text-base-content/70 mb-6">
                 Quer apoiar a SAINF e conectar-se com a comunidade acadêmica? Entre em contato conosco pelo Instagram!
               </p>
-              <a 
-                href="https://www.instagram.com/sainf_ufsm/" 
-                target="_blank" 
+              <a
+                href="https://www.instagram.com/sainf_ufsm/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary btn-lg gap-2"
               >

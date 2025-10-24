@@ -73,6 +73,13 @@ export const cronogramaEventos: DiaEvento[] = [
         local: "Auditório do INPE",
         descricao: "",
         tipo: "workshop"
+      },
+      {
+        horario: "19:30 - 21:00",
+        titulo: "Palestra WoMakersCode",
+        local: "Online (Link será enviado por e-mail)",
+        descricao: "Palestra com a Winnie da WoMakersCode, ",
+        tipo: "palestra"
       }
     ]
   },
