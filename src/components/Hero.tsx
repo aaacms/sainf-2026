@@ -48,10 +48,21 @@ export default function Hero() {
               Participe da 12ª edição e aproveite para expandir seus conhecimentos, conhecer novas tecnologias e conectar-se com a comunidade tech!
             </p>
 
-            {/* Novidades 2025 */}
+            {/* Aviso Urgente */}
             <div className="mt-8 space-y-4">
-              {/* Revista ComInG */}
-              <div className="p-4 bg-primary/10 rounded-lg border-2 border-primary/30">
+              {/* Mudança de Local */}
+              <div className="p-4 bg-error/10 rounded-lg border-2 border-error/50 animate-pulse">
+                <div className="flex items-center gap-2 mb-2">
+                  <Sparkles className="text-error" size={20} />
+                  <span className="font-bold text-error">AVISO URGENTE!</span>
+                </div>
+                <p className="text-base text-base-content/90 font-semibold">
+                  A palestra do dia <strong>06/11</strong> foi transferida para o <strong>Auditório do INPE</strong>!
+                </p>
+              </div>
+
+              {/* Revista ComInG - Hidden */}
+              <div className="hidden p-4 bg-primary/10 rounded-lg border-2 border-primary/30">
                 <div className="flex items-center gap-2 mb-2">
                   <Sparkles className="text-primary" size={20} />
                   <span className="font-bold text-primary">Novidade 2025!</span>
@@ -68,8 +79,8 @@ export default function Hero() {
                 </Link>
               </div>
 
-              {/* Maratona de Programação */}
-              <div className="p-4 bg-secondary/10 rounded-lg border-2 border-secondary/30">
+              {/* Maratona de Programação - Hidden */}
+              <div className="hidden p-4 bg-secondary/10 rounded-lg border-2 border-secondary/30">
                 <div className="flex items-center gap-2 mb-2">
                   <Sparkles className="text-secondary" size={20} />
                   <span className="font-bold text-secondary">Maratona de Programação!</span>
