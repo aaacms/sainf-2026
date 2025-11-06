@@ -152,28 +152,28 @@ export const cronogramaEventos: DiaEvento[] = [
       {
         horario: "08:30 - 09:00",
         titulo: "Credenciamento",
-        local: "Auditório Pércio Reis - CT Anexo C",
+        local: "Auditório do INPE",
         descricao: "Recepção dos participantes e entrega de materiais",
         tipo: "credenciamento"
       },
       {
         horario: "09:00 - 10:30",
         titulo: "Palestra Scherm",
-        local: "Auditório Pércio Reis - CT Anexo C",
+        local: "Auditório do INPE",
         descricao: "",
         tipo: "palestra"
       },
       {
         horario: "10:30 - 11:15",
         titulo: "Coffee Break",
-        local: "Hall do CT",
+        local: "Em frente ao Auditório do INPE",
         descricao: "Agora está na hora do descanso e bora de coffe break!",
         tipo: "coffee"
       },
       {
         horario: "11:15 - 12:00",
         titulo: "Encerramento + Sorteio de premiação pros presentes",
-        local: "Auditório Pércio Reis - CT Anexo C",
+        local: "Auditório do INPE",
         descricao: "",
         tipo: "palestra"
       },
