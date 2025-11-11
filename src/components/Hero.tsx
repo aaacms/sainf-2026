@@ -11,21 +11,21 @@ import { Sparkles } from 'lucide-react';
  */
 export default function Hero() {
   return (
-    <section 
-      className="py-24 md:py-32 px-6" 
+    <section
+      className="py-24 md:py-32 px-6"
       aria-labelledby="hero-title"
     >
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16">
-          
+
           {/* Logo - 50% do espaço */}
-          <div 
+          <div
             className="flex-1 w-full h-[400px] md:h-[600px] lg:h-[700px] flex items-center justify-center"
             role="img"
             aria-label="Logo SAINF XII"
           >
-            <img 
-              src="/saint.png" 
+            <img
+              src="/saint.png"
               alt="Logo SAINF XII"
               className="w-full h-full object-cover"
             />
@@ -33,13 +33,13 @@ export default function Hero() {
 
           {/* Texto Hero - 50% do espaço */}
           <div className="flex-1 text-center md:text-left">
-            <h1 
+            <h1
               id="hero-title"
               className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6"
             >
               SAINF XII
             </h1>
-            
+
             <p className="text-lg md:text-xl text-base-content/70 leading-relaxed mb-4">
               A Semana Acadêmica de Informática é um evento anual que reúne estudantes para uma semana de aprendizado e networking através de minicursos, palestras com profissionais da área e workshops práticos.
             </p>
@@ -53,8 +53,9 @@ export default function Hero() {
               <div className='p-4 bg-successs/10 rounded-lg border-2 border-error/50 animate-pulse'>
                 Muito obrigado pela participação de todos na SAINF XII! Até a próxima edição!
               </div>
-              {/* Mudança de Local */}
-              {/* <div className="p-4 bg-error/10 rounded-lg border-2 border-error/50 animate-pulse">
+            </div>
+            {/* Mudança de Local */}
+            {/* <div className="p-4 bg-error/10 rounded-lg border-2 border-error/50 animate-pulse">
                 <div className="flex items-center gap-2 mb-2">
                   <Sparkles className="text-error" size={20} />
                   <span className="font-bold text-error">AVISO URGENTE!</span>
@@ -64,8 +65,8 @@ export default function Hero() {
                 </p>
               </div> */}
 
-              {/* Revista ComInG - Hidden */}
-              {/* <div className="hidden p-4 bg-primary/10 rounded-lg border-2 border-primary/30">
+            {/* Revista ComInG - Hidden */}
+            {/* <div className="hidden p-4 bg-primary/10 rounded-lg border-2 border-primary/30">
                 <div className="flex items-center gap-2 mb-2">
                   <Sparkles className="text-primary" size={20} />
                   <span className="font-bold text-primary">Novidade 2025!</span>
@@ -83,7 +84,7 @@ export default function Hero() {
               </div>
 
               {/* Maratona de Programação - Hidden */}
-              {/* <div className="hidden p-4 bg-secondary/10 rounded-lg border-2 border-secondary/30"> 
+            {/* <div className="hidden p-4 bg-secondary/10 rounded-lg border-2 border-secondary/30"> 
                 <div className="flex items-center gap-2 mb-2">
                   <Sparkles className="text-secondary" size={20} />
                   <span className="font-bold text-secondary">Maratona de Programação!</span>
