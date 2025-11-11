@@ -50,8 +50,11 @@ export default function Hero() {
 
             {/* Aviso Urgente */}
             <div className="mt-8 space-y-4">
+              <div className='p-4 bg-successs/10 rounded-lg border-2 border-error/50 animate-pulse'>
+                Muito obrigado pela participação de todos na SAINF XII! Até a próxima edição!
+              </div>
               {/* Mudança de Local */}
-              <div className="p-4 bg-error/10 rounded-lg border-2 border-error/50 animate-pulse">
+              {/* <div className="p-4 bg-error/10 rounded-lg border-2 border-error/50 animate-pulse">
                 <div className="flex items-center gap-2 mb-2">
                   <Sparkles className="text-error" size={20} />
                   <span className="font-bold text-error">AVISO URGENTE!</span>
@@ -59,10 +62,10 @@ export default function Hero() {
                 <p className="text-base text-base-content/90 font-semibold">
                   A palestra do dia <strong>06/11</strong> foi transferida para o <strong>Auditório do INPE</strong>!
                 </p>
-              </div>
+              </div> */}
 
               {/* Revista ComInG - Hidden */}
-              <div className="hidden p-4 bg-primary/10 rounded-lg border-2 border-primary/30">
+              {/* <div className="hidden p-4 bg-primary/10 rounded-lg border-2 border-primary/30">
                 <div className="flex items-center gap-2 mb-2">
                   <Sparkles className="text-primary" size={20} />
                   <span className="font-bold text-primary">Novidade 2025!</span>
@@ -80,7 +83,7 @@ export default function Hero() {
               </div>
 
               {/* Maratona de Programação - Hidden */}
-              <div className="hidden p-4 bg-secondary/10 rounded-lg border-2 border-secondary/30">
+              {/* <div className="hidden p-4 bg-secondary/10 rounded-lg border-2 border-secondary/30"> 
                 <div className="flex items-center gap-2 mb-2">
                   <Sparkles className="text-secondary" size={20} />
                   <span className="font-bold text-secondary">Maratona de Programação!</span>
@@ -96,10 +99,10 @@ export default function Hero() {
                   Saiba mais →
                 </Link>
               </div>
-            </div>
+            </div> */}
 
             {/* CTA Buttons */}
-            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            {/* <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a 
                 href="https://forms.gle/ohKJEorKojBA1UYF9" 
                 target="_blank"
@@ -116,7 +119,7 @@ export default function Hero() {
               >
                 Saiba Mais
               </a>
-            </div>
+            </div> */}
           </div>
 
         </div>
