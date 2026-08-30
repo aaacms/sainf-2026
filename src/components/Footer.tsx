@@ -9,7 +9,7 @@ export default function Footer() {
 
   return (
     <footer 
-      className="border-t border-base-content/10 py-8 px-6"
+      className="border-t border-base-content/10 bg-base-100 py-8 px-6"
       role="contentinfo"
       aria-label="Rodapé do site"
     >
@@ -18,7 +18,7 @@ export default function Footer() {
           
           {/* Copyright */}
           <p className="text-sm text-base-content/60">
-            © {currentYear} SAINF XII. Todos os direitos reservados.
+            © {currentYear} SAINF XIII. Todos os direitos reservados.
           </p>
 
           {/* Links de redes sociais */}

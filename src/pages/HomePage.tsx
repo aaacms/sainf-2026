@@ -1,4 +1,5 @@
 import Hero from '../components/Hero';
+import CountdownSection from '../components/CountdownSection';
 import SobreSection from '../components/SobreSection';
 import CronogramaSection from '../components/CronogramaSection';
 import InscricaoSection from '../components/InscricaoSection';
@@ -11,6 +12,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <CountdownSection />
       <SobreSection />
       <CronogramaSection />
       <InscricaoSection />

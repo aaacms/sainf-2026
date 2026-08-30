@@ -12,7 +12,7 @@ export default function ParceirosSection() {
     {
       id: 2,
       nome: "PET-SI",
-      logo: "/parceiros/logopetsi.svg",
+      logo: "/parceiros/logo-petsi.png",
       link: "https://www.instagram.com/petsi_ufsm/",
     },
     {
@@ -21,49 +21,49 @@ export default function ParceirosSection() {
       logo: "/parceiros/petcc.png",
       link: "https://www.instagram.com/petcc_ufsm/",
     },
-    {
-      id: 4,
-      nome: "Torriani Restaurantes",
-      logo: '/parceiros/torriani.jpeg',
-      link: 'https://www.instagram.com/torriani.restaurantes?igsh=MW9keHQ3MGJhYW02Ng==',
-    },
-    {
-      id: 5,
-      nome: "Casa do Pastel",
-      logo: '/parceiros/logoCasaDoPastel.png',
-      link: 'https://www.instagram.com/casadopastelpastelaria/',
-    },
-    {
-      id: 6,
-      nome: "Mima Bolsas",
-      logo: '/parceiros/mimabolsas.jpeg',
-      link: 'https://www.instagram.com/mima.bolsas/',
-    },
-    {
-      id: 7,
-      nome: "Scherm",
-      logo: '/parceiros/schermlogo.svg',
-      link: 'https://scherm.com.br',
-    },
+    // {
+    //   id: 4,
+    //   nome: "Torriani Restaurantes",
+    //   logo: '/parceiros/torriani.jpeg',
+    //   link: 'https://www.instagram.com/torriani.restaurantes?igsh=MW9keHQ3MGJhYW02Ng==',
+    // },
+    // {
+    //   id: 5,
+    //   nome: "Casa do Pastel",
+    //   logo: '/parceiros/logoCasaDoPastel.png',
+    //   link: 'https://www.instagram.com/casadopastelpastelaria/',
+    // },
+    // {
+    //   id: 6,
+    //   nome: "Mima Bolsas",
+    //   logo: '/parceiros/mimabolsas.jpeg',
+    //   link: 'https://www.instagram.com/mima.bolsas/',
+    // },
+    // {
+    //   id: 7,
+    //   nome: "Scherm",
+    //   logo: '/parceiros/schermlogo.svg',
+    //   link: 'https://scherm.com.br',
+    // },
     {
       id: 8,
       nome: "BitMarias",
       logo: '/parceiros/bitmarias.png',
       link: null,
     }
-    ,{
-      id: 9,
-      nome: "WoMakersCode",
-      logo: '/parceiros/womakerscode.png',
-      link: null,
-    }
+    // ,{
+    //   id: 9,
+    //   nome: "WoMakersCode",
+    //   logo: '/parceiros/womakerscode.png',
+    //   link: null,
+    // }
     
   ];
 
   return (
     <section
       id="parceiros"
-      className="py-24 md:py-32 px-6"
+      className="py-24 md:py-32 px-6 bg-base-200"
       aria-labelledby="parceiros-title"
     >
       <div className="container mx-auto max-w-6xl">
@@ -77,7 +77,7 @@ export default function ParceirosSection() {
             Parceiros
           </h2>
           <p className="text-lg md:text-xl text-base-content/70 max-w-2xl mx-auto">
-            Conheça as empresas e organizações que tornam a SAINF XII possível. Juntos, construímos uma semana de aprendizado e networking inesquecível!
+            Conheça as empresas e organizações que tornam a SAINF XIII possível. Juntos, construímos uma semana de aprendizado e networking inesquecível!
           </p>
         </div>
 
@@ -142,7 +142,7 @@ export default function ParceirosSection() {
 
         {/* Call to Action para novos parceiros */}
         <div className="mt-16 text-center">
-          <div className="card bg-base-200 shadow-lg max-w-2xl mx-auto">
+          <div className="card partner-cta max-w-2xl mx-auto">
             <div className="card-body items-center text-center">
               <h3 className="card-title text-2xl mb-3">Seja um Parceiro!</h3>
               <p className="text-base-content/70 mb-6">
@@ -152,7 +152,7 @@ export default function ParceirosSection() {
                 href="https://www.instagram.com/sainf_ufsm/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-primary btn-lg gap-2"
+                className="btn btn-primary btn-lg partner-cta-button gap-2"
               >
                 <Instagram size={24} />
                 Quer ser parceiro?

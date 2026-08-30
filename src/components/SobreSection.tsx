@@ -10,7 +10,7 @@ export default function SobreSection() {
   return (
     <section 
       id="sobre"
-      className="py-20 md:py-28 px-6 bg-base-200/50" 
+      className="py-20 md:py-28 px-6 bg-base-100"
       aria-labelledby="sobre-title"
     >
       <div className="container mx-auto max-w-5xl">
@@ -23,7 +23,7 @@ export default function SobreSection() {
             O que é a SAINF?
           </h2>
           <p className="text-lg text-base-content/70 max-w-2xl mx-auto">
-            Conheça mais sobre o maior evento acadêmico de Informática
+            Conheça mais sobre o evento
           </p>
         </div>
 
@@ -151,7 +151,7 @@ export default function SobreSection() {
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary btn-lg"
-            aria-label="Fazer inscrição na SAINF XII"
+            aria-label="Fazer inscrição na SAINF XIII"
           >
             Garanta sua vaga agora!
           </a>

@@ -7,7 +7,7 @@ export default function InscricaoSection() {
   return (
     <section 
       id="inscricao" 
-      className="py-24 md:py-32 px-6 bg-base-200"
+      className="py-24 md:py-32 px-6 bg-base-100"
       aria-labelledby="inscricao-title"
     >
       <div className="container mx-auto max-w-4xl text-center">
@@ -19,14 +19,14 @@ export default function InscricaoSection() {
         </h2>
         
         <p className="text-lg md:text-xl text-base-content/70 mb-10 max-w-2xl mx-auto">
-          Não perca a oportunidade de participar da 12ª edição da SAINF! Faça sua inscrição através do nosso formulário e garanta sua participação no evento.
+          Não perca a oportunidade de participar da 13ª edição da SAINF! Faça sua inscrição através do nosso formulário e garanta sua participação no evento.
         </p>
 
         <a 
           href="https://forms.gle/ohKJEorKojBA1UYF9" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="btn btn-primary btn-lg"
+          className="btn btn-primary btn-lg form-cta-button"
           aria-label="Abrir formulário de inscrição em nova aba"
         >
           Acessar Formulário de Inscrição

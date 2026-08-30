@@ -13,7 +13,7 @@ import MaratonaPage from './pages/MaratonaPage';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-base-300">
+      <div className="min-h-screen bg-base-300 site-shell">
         <Navbar />
         
         <main>

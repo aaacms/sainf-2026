@@ -27,7 +27,9 @@ export default function Navbar() {
       <div className="container mx-auto max-w-7xl flex justify-between items-center">
         
         {/* Espaço vazio à esquerda - mantém design minimalista */}
-        <div className="flex-1"></div>
+        <Link to="/" className="pixel-title text-2xl md:text-3xl leading-none text-primary" aria-label="SAINF XIII - página inicial">
+          <span className="text-base-content">XIII</span> SAINF
+        </Link>
 
         {/* Menu Desktop - escondido em mobile */}
         <div className="hidden md:flex gap-8 items-center">
