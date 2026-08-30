@@ -5,6 +5,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/sainf-2026/',
   plugins: [react()],
+  build: {
+    outDir: 'docs',
+  },
   resolve: {
     alias: {
       '@': '/src',
