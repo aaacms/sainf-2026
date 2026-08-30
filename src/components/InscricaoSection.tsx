@@ -29,7 +29,7 @@ export default function InscricaoSection() {
           className="btn btn-primary btn-lg form-cta-button"
           aria-label="Abrir formulário de inscrição em nova aba"
         >
-          Acessar Formulário de Inscrição
+          Formulário de Inscrição
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
             className="h-5 w-5 ml-2" 
