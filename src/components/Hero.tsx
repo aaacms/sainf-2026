@@ -4,11 +4,11 @@ export default function Hero() {
   return (
     <section className="hero-retro px-5 py-12 md:px-8 md:py-4" aria-labelledby="hero-title">
       <div className="container mx-auto max-w-6xl">
-        <img src="/estrela.png" alt="" className="hero-star" aria-hidden="true" />
+        <img src={`${import.meta.env.BASE_URL}estrela.png`} alt="" className="hero-star" aria-hidden="true" />
 
         <div className="grid items-center gap-15 lg:gap-24 lg:grid-cols-[1.05fr_.95fr]">
           <div className="relative order-2 lg:order-1">
-            <img src="/logo-sainf2.png" alt="Ilustração da SAINF XIII" className="monitor-logo" />
+            <img src={`${import.meta.env.BASE_URL}logo-sainf2.png`} alt="Ilustração da SAINF XIII" className="monitor-logo" />
           </div>
 
           <div className="order-1 text-center lg:order-2 lg:text-left">

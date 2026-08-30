@@ -12,13 +12,13 @@ export default function ParceirosSection() {
     {
       id: 2,
       nome: "PET-SI",
-      logo: "/parceiros/logo-petsi.png",
+      logo: `${import.meta.env.BASE_URL}parceiros/logo-petsi.png`,
       link: "https://www.instagram.com/petsi_ufsm/",
     },
     {
       id: 3,
       nome: "PET-CC",
-      logo: "/parceiros/petcc.png",
+      logo: `${import.meta.env.BASE_URL}parceiros/petcc.png`,
       link: "https://www.instagram.com/petcc_ufsm/",
     },
     // {
@@ -48,7 +48,7 @@ export default function ParceirosSection() {
     {
       id: 8,
       nome: "BitMarias",
-      logo: '/parceiros/bitmarias.png',
+      logo: `${import.meta.env.BASE_URL}parceiros/bitmarias.png`,
       link: null,
     }
     // ,{
