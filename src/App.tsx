@@ -12,7 +12,7 @@ import MaratonaPage from './pages/MaratonaPage';
  */
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="min-h-screen bg-base-300 site-shell">
         <Navbar />
         
