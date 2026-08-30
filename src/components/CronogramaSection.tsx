@@ -10,7 +10,7 @@ export default function CronogramaSection() {
     <section id="cronograma" className="schedule-section px-5 py-20 md:px-8 md:py-28" aria-labelledby="schedule-title">
       <div className="container mx-auto max-w-5xl">
         <header className="mx-auto mb-10 max-w-2xl text-center">
-          <p className="pixel-title mb-3 text-primary">// AGENDA</p>
+          {/* <p className="pixel-title mb-3 text-primary">// AGENDA</p> */}
           <h2 id="schedule-title" className="text-4xl md:text-5xl">Cronograma</h2>
           <p className="mt-7 text-lg text-base-content/70">Escolha um dia e acompanhe a programação da SAINF.</p>
         </header>

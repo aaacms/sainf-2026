@@ -23,7 +23,7 @@ export default function InscricaoSection() {
         </p>
 
         <a 
-          href="https://forms.gle/ohKJEorKojBA1UYF9" 
+          href="https://forms.gle/7h2fzrZfLbiMHTDq6" 
           target="_blank" 
           rel="noopener noreferrer"
           className="btn btn-primary btn-lg form-cta-button"

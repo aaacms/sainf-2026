@@ -1,4 +1,4 @@
-import { BookOpen, Mic2, Users, CheckCircle2, Award, Lightbulb, Briefcase } from 'lucide-react';
+import { BookOpen, Mic2, Users } from 'lucide-react';
 
 /**
  * Componente Sobre Section
@@ -45,7 +45,7 @@ export default function SobreSection() {
         {/* Cards de Benefícios */}
         <div className="grid md:grid-cols-3 gap-8 mt-16">
           {/* Minicursos */}
-          <div className="card bg-base-100 shadow-lg hover:shadow-xl transition-shadow">
+          <div className="card about-feature-card">
             <div className="card-body">
               <div className="mb-4">
                 <BookOpen className="w-12 h-12 text-primary" />
@@ -59,7 +59,7 @@ export default function SobreSection() {
           </div>
 
           {/* Palestras */}
-          <div className="card bg-base-100 shadow-lg hover:shadow-xl transition-shadow">
+          <div className="card about-feature-card">
             <div className="card-body">
               <div className="mb-4">
                 <Mic2 className="w-12 h-12 text-primary" />
@@ -73,7 +73,7 @@ export default function SobreSection() {
           </div>
 
           {/* Networking */}
-          <div className="card bg-base-100 shadow-lg hover:shadow-xl transition-shadow">
+          <div className="card about-feature-card">
             <div className="card-body">
               <div className="mb-4">
                 <Users className="w-12 h-12 text-primary" />
@@ -85,76 +85,6 @@ export default function SobreSection() {
               </p>
             </div>
           </div>
-        </div>
-
-        {/* Por que participar */}
-        <div className="mt-20 bg-base-100 rounded-2xl p-8 md:p-12">
-          <h3 className="text-3xl font-bold mb-8 text-center">
-            Por que participar?
-          </h3>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="flex gap-4">
-              <div className="flex-shrink-0">
-                <Lightbulb className="w-6 h-6 text-primary" />
-              </div>
-              <div>
-                <h4 className="font-semibold text-lg mb-2">Conhecimento Atualizado</h4>
-                <p className="text-base-content/70">
-                  Conteúdos alinhados com as demandas atuais do mercado de trabalho
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-4">
-              <div className="flex-shrink-0">
-                <Award className="w-6 h-6 text-primary" />
-              </div>
-              <div>
-                <h4 className="font-semibold text-lg mb-2">Certificados</h4>
-                <p className="text-base-content/70">
-                  Certificação válida para atividades complementares do curso
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-4">
-              <div className="flex-shrink-0">
-                <CheckCircle2 className="w-6 h-6 text-primary" />
-              </div>
-              <div>
-                <h4 className="font-semibold text-lg mb-2">Experiência Prática</h4>
-                <p className="text-base-content/70">
-                  Workshops hands-on para aplicar o conhecimento na prática
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-4">
-              <div className="flex-shrink-0">
-                <Briefcase className="w-6 h-6 text-primary" />
-              </div>
-              <div>
-                <h4 className="font-semibold text-lg mb-2">Oportunidades</h4>
-                <p className="text-base-content/70">
-                  Conheça empresas parceiras e descubra oportunidades de carreira
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* CTA Final */}
-        <div className="text-center mt-12">
-          <a 
-            href="https://forms.gle/ohKJEorKojBA1UYF9" 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-primary btn-lg"
-            aria-label="Fazer inscrição na SAINF XIII"
-          >
-            Garanta sua vaga agora!
-          </a>
         </div>
       </div>
     </section>

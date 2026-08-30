@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { BookOpen, Calendar, FileText, Mail, Award, Users, Sparkles, ArrowLeft, Send } from 'lucide-react';
+import { BookOpen, Calendar, FileText, Mail, Award, Users, ArrowLeft, Send } from 'lucide-react';
 
 /**
  * Componente RevistaComingSection
@@ -9,7 +9,7 @@ export default function RevistaComingSection() {
   return (
     <section 
       id="revista-coming"
-      className="py-24 px-6 bg-base-100"
+      className="coming-section py-24 px-6 bg-base-100"
       aria-labelledby="revista-title"
     >
       <div className="container mx-auto max-w-6xl">
@@ -26,10 +26,7 @@ export default function RevistaComingSection() {
         </div>
         {/* Header com destaque */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6">
-            <Sparkles size={20} />
-            <span className="font-semibold">Novidade 2025!</span>
-          </div>
+          <p className="pixel-title coming-kicker">// SAINF 2026</p>
           <h2 
             id="revista-title"
             className="text-4xl md:text-5xl font-bold mb-6"
@@ -42,7 +39,7 @@ export default function RevistaComingSection() {
         </div>
 
         {/* Sobre a Revista */}
-        <div className="card bg-base-200 shadow-xl mb-12">
+        <div className="card coming-content-card mb-12">
           <div className="card-body">
             <div className="flex items-center gap-3 mb-4">
               <BookOpen className="text-primary" size={32} />
@@ -65,14 +62,14 @@ export default function RevistaComingSection() {
         </div>
 
         {/* Processo de Submissão */}
-        <div className="card bg-base-200 shadow-xl mb-12">
+        <div className="card coming-content-card mb-12">
           <div className="card-body">
             <div className="flex items-center gap-3 mb-4">
               <Award className="text-primary" size={32} />
               <h3 className="card-title text-2xl">Processo de Submissão</h3>
             </div>
             <div className="space-y-4">
-              <div className="alert alert-info">
+              <div className="alert coming-alert">
                 <Users size={24} />
                 <div>
                   <h4 className="font-bold">Apresentação Obrigatória na SAINF</h4>
@@ -123,7 +120,7 @@ export default function RevistaComingSection() {
         </div>
 
         {/* Áreas de Interesse */}
-        <div className="card bg-base-200 shadow-xl mb-12">
+        <div className="card coming-content-card mb-12">
           <div className="card-body">
             <div className="flex items-center gap-3 mb-4">
               <FileText className="text-primary" size={32} />
@@ -155,7 +152,7 @@ export default function RevistaComingSection() {
                 'Sistemas Cooperativos',
                 'Sistemas Paralelos e Distribuídos'
               ].map((area, index) => (
-                <div key={index} className="badge badge-outline badge-lg p-4">
+                <div key={index} className="badge coming-area-badge badge-lg p-4">
                   {area}
                 </div>
               ))}
@@ -164,40 +161,40 @@ export default function RevistaComingSection() {
         </div>
 
         {/* Datas Importantes */}
-        <div className="card bg-gradient-to-br from-primary/20 to-secondary/20 shadow-xl mb-12">
+        <div className="card coming-content-card mb-12">
           <div className="card-body">
             <div className="flex items-center gap-3 mb-6">
               <Calendar className="text-primary" size={32} />
               <h3 className="card-title text-2xl">Datas Importantes</h3>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="flex flex-col gap-2">
+              <div className="coming-date-card">
                 <div className="text-sm text-base-content/60">Submissão de Resumos</div>
-                <div className="text-2xl font-bold">30 de outubro de 2025</div>
+                <div className="text-2xl font-bold">30 de outubro de 2026</div>
               </div>
-              <div className="flex flex-col gap-2">
+              <div className="coming-date-card">
                 <div className="text-sm text-base-content/60">Notificação de Aceitação</div>
-                <div className="text-2xl font-bold">02 de novembro de 2025</div>
+                <div className="text-2xl font-bold">02 de novembro de 2026</div>
               </div>
-              <div className="flex flex-col gap-2">
+              <div className="coming-date-card">
                 <div className="text-sm text-base-content/60">Apresentação em Pitch</div>
-                <div className="text-2xl font-bold">4 e 5 de novembro de 2025</div>
+                <div className="text-2xl font-bold">4 e 5 de novembro de 2026</div>
                 <div className="text-sm text-base-content/60">13h às 13h30 (5 min/colaborador)</div>
               </div>
-              <div className="flex flex-col gap-2">
+              <div className="coming-date-card">
                 <div className="text-sm text-base-content/60">Envio da Versão em Artigo</div>
-                <div className="text-2xl font-bold">A partir de 10 de dezembro de 2025</div>
+                <div className="text-2xl font-bold">A partir de 10 de dezembro de 2026</div>
               </div>
-              <div className="flex flex-col gap-2 md:col-span-2">
+              <div className="coming-date-card md:col-span-2">
                 <div className="text-sm text-base-content/60">Publicação da ComInG</div>
-                <div className="text-2xl font-bold">Até março de 2026</div>
+                <div className="text-2xl font-bold">Até março de 2027</div>
               </div>
             </div>
           </div>
         </div>
 
         {/* Contatos */}
-        <div className="card bg-base-200 shadow-xl">
+        <div className="card coming-content-card">
           <div className="card-body">
             <div className="flex items-center gap-3 mb-6">
               <Mail className="text-primary" size={32} />
@@ -240,23 +237,27 @@ export default function RevistaComingSection() {
 
         {/* Botão de Submissão em Destaque */}
         <div className="mt-12">
-          <div className="card bg-gradient-to-br from-primary to-secondary text-primary-content shadow-2xl">
+          <div className="card coming-cta">
             <div className="card-body items-center text-center">
-              <h3 className="card-title text-3xl mb-4">Pronto para Submeter?</h3>
-              <p className="text-lg mb-6 max-w-2xl">
-                Envie seu resumo através do formulário oficial e garanta sua participação na SAINF XII!
+              <div className="coming-cta-icon" aria-hidden="true">
+                <Send size={32} />
+              </div>
+              <p className="pixel-title coming-cta-kicker">// SUBMISSÃO DE ARTIGOS</p>
+              <h3 className="card-title text-3xl md:text-4xl">Pronto para Submeter?</h3>
+              <p className="coming-cta-copy text-lg max-w-2xl">
+                Envie seu resumo através do formulário oficial e garanta sua participação na SAINF XIII!
               </p>
               <a 
                 href="https://forms.gle/tRcGSjJhzG8hJE226" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="btn btn-lg bg-white text-primary hover:bg-base-100 gap-2 shadow-lg"
+                className="btn btn-primary btn-lg coming-cta-button gap-2"
               >
                 <Send size={24} />
                 Submeter Resumo Agora
               </a>
-              <p className="text-sm mt-4 opacity-90">
-                Prazo: até 30 de outubro de 2025
+              <p className="coming-cta-deadline text-sm">
+                Prazo: até 30 de outubro de 2026
               </p>
             </div>
           </div>
