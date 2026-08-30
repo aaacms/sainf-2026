@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { Link, useLocation } from 'react-router-dom';
 import { Instagram, BookOpen, Code2 } from 'lucide-react';
 
@@ -21,6 +22,23 @@ export default function Navbar() {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
+
+  useEffect(() => {
+    if (!isMenuOpen) return;
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') closeMenu();
+    };
+    const previousOverflow = document.body.style.overflow;
+
+    document.body.style.overflow = 'hidden';
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isMenuOpen]);
 
   return (
     <nav className="navbar px-6 py-4" role="navigation" aria-label="Menu principal">
@@ -135,16 +153,16 @@ export default function Navbar() {
       </div>
 
       {/* Menu Mobile Modal */}
-      {isMenuOpen && (
+      {isMenuOpen && createPortal(
         <div 
-          className="fixed inset-0 bg-black/60 z-50 md:hidden"
+          className="fixed inset-0 z-[100] bg-black/60 md:hidden"
           onClick={closeMenu}
           role="dialog"
           aria-modal="true"
           aria-label="Menu de navegação"
         >
           <div 
-            className="fixed top-0 right-0 h-full w-64 bg-base-200 shadow-2xl"
+            className="fixed top-0 right-0 h-full w-[min(20rem,calc(100vw-1.5rem))] overflow-y-auto border-l-2 border-[#24242b] bg-[#f2f0ea] text-[#24242b] shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Botão Fechar no topo direito */}
@@ -260,7 +278,7 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-      )}
+      , document.body)}
     </nav>
   );
 }
