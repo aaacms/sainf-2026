@@ -35,7 +35,7 @@ export const cronogramaEventos: DiaEvento[] = [
       {
         horario: "10:30 - 10:45",
         titulo: "Coffee Break",
-        local: "Hall do CT",
+        local: "Em frente ao Auditório do INPE",
         descricao: "Partiu coffe break =)",
         tipo: "coffee"
       },
@@ -48,7 +48,7 @@ export const cronogramaEventos: DiaEvento[] = [
       },
       {
         horario: "13:00 - 14:00",
-        titulo: "vem ai",
+        titulo: "Em preparação",
         local: "Auditório do INPE",
         descricao: "",
         tipo: "workshop"
@@ -56,7 +56,7 @@ export const cronogramaEventos: DiaEvento[] = [
       {
         horario: "15:30 - 16:00",
         titulo: "Coffee Break",
-        local: "Hall do CT",
+        local: "Em frente ao Auditório do INPE",
         descricao: "Partiu coffe break =)",
         tipo: "coffee"
       }
@@ -76,7 +76,7 @@ export const cronogramaEventos: DiaEvento[] = [
       {
         horario: "09:00 - 12:00",
         titulo: "Revista ComInG - Pitch dos Artigos",
-        local: "Sala X",
+        local: "Sala a ser definida",
         descricao: "Veja as apresentações dos artigos que serão publicados na revista ComInG",
         tipo: "palestra"
       },
@@ -90,7 +90,7 @@ export const cronogramaEventos: DiaEvento[] = [
       {
         horario: "13:00 - 14:00",
         titulo: "Maratona de SQL",
-        local: "Sala X",
+        local: "Sala a ser definida",
         descricao: "",
         tipo: "workshop"
       }
@@ -130,10 +130,17 @@ export const cronogramaEventos: DiaEvento[] = [
       },
       {
         horario: "14:00 - 18:30",
-        titulo: "Maratona de Programação - Nível Avançado",
-        local: "Sala 337 - Anexo Principal CT",
-        descricao: "Prepare-se para a principal competição de programação da UFSM!",
+        titulo: "Em preparação",
+        local: "Auditório do INPE",
+        descricao: "",
         tipo: "workshop"
+      },
+      {
+        horario: "15:00 - 15:30",
+        titulo: "Coffee Break",
+        local: "Em frente ao Auditório do INPE",
+        descricao: "Agora está na hora do descanso e bora de coffe break!",
+        tipo: "coffee"
       }
     ]
   }
