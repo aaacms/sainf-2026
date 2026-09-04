@@ -60,19 +60,14 @@
   .schedule-day-heading { display: flex; align-items: center; justify-content: center; gap: .6rem; margin: 0 auto 1.25rem; color: #9535ee; font-weight: 700; }
   .schedule-day-heading em { padding-left: .6rem; border-left: 2px solid #ff9fba; color: #24242b; font-style: normal; }
   .schedule-list { max-width: 48rem; margin: 0 auto; padding: 0; list-style: none; }
-  .schedule-event { display: grid; grid-template-columns: 8.2rem 1fr; gap: 1rem; position: relative; padding-bottom: 1rem; }
-  .schedule-event:not(:last-child)::after { content: ''; position: absolute; top: 2.7rem; bottom: -.15rem; left: 7.65rem; width: 2px; background: #9535ee; }
-  .schedule-time { position: relative; z-index: 1; align-self: start; padding: .85rem .75rem; color: #fffdf8; background: #24242b; font: 600 1rem 'Pixelify Sans', monospace; text-align: center; box-shadow: 3px 3px 0 #ff9fba; }
+  .schedule-event { display: grid; grid-template-columns: 9.5rem 1fr; gap: 1rem; position: relative; padding-bottom: 1rem; }
+  .schedule-time { position: relative; z-index: 1; align-self: start; padding: .85rem .75rem; color: #fffdf8; background: #24242b; font: 700 1rem 'Space Grotesk', system-ui, sans-serif; letter-spacing: .02em; text-align: center; box-shadow: 3px 3px 0 #ff9fba; }
   .schedule-card { position: relative; min-height: 5rem; padding: 1rem 3rem 1rem 1.1rem; border: 2px solid #24242b; background: #f4f3ee; box-shadow: 4px 4px 0 #9535ee55; }
-  .schedule-card::before { content: ''; position: absolute; top: 1.4rem; left: -1.5rem; width: .75rem; height: .75rem; border: 2px solid #24242b; border-radius: 50%; background: #9535ee; }
   .schedule-card h3 { margin: 0; font-size: 1.06rem; line-height: 1.25; }
   .schedule-card p { margin: .55rem 0 0; color: #55555c; font-size: .9rem; }
   .schedule-index { position: absolute; top: .75rem; right: .8rem; color: #9535ee; font: 600 1rem 'Pixelify Sans', monospace; }
   .schedule-details { display: flex; flex-wrap: wrap; gap: .45rem 1rem; margin-top: .6rem; color: #55555c; font-size: .84rem; }
   .schedule-details span { display: inline-flex; align-items: center; gap: .25rem; }
-  .schedule-event-workshop .schedule-card::before { background: #ff9fba; }
-  .schedule-event-coffee .schedule-card::before, .schedule-event-pausa .schedule-card::before { background: #ffcc62; }
-  .schedule-event-almoco .schedule-card::before { background: #7ec892; }
   @keyframes notice-blink { 50% { opacity: .35; } }
   @media (max-width: 560px) {
     .schedule-section { padding-right: 1.1rem; padding-left: 1.1rem; }
@@ -82,17 +77,9 @@
     .schedule-tab { padding: .6rem .4rem; }
     .schedule-day-heading { flex-wrap: wrap; gap: .35rem .6rem; margin-bottom: 1rem; font-size: .95rem; }
     .schedule-day-heading em { padding-left: .6rem; }
-    .schedule-list { position: relative; }
-    .schedule-list::before { content: none; }
-    .schedule-event { grid-template-columns: 1.25rem minmax(0, 1fr); gap: .75rem; padding-bottom: 1.2rem; padding-left: 0; }
-    .schedule-event::before { content: ''; position: absolute; z-index: 2; top: .55rem; left: .25rem; width: .75rem; height: .75rem; border: 2px solid #24242b; border-radius: 50%; background: #9535ee; }
-    .schedule-event:not(:last-child)::after { display: block; z-index: 1; top: 1.3rem; bottom: -.95rem; left: .5625rem; width: 2px; background: #9535ee; }
-    .schedule-time { grid-column: 2; width: max-content; min-width: 0; padding: .6rem .7rem; font-size: .88rem; }
-    .schedule-card { grid-column: 2; min-width: 0; min-height: 0; padding: .9rem 2.45rem .9rem .9rem; box-shadow: 3px 3px 0 #9535ee55; }
-    .schedule-card::before { display: none; }
-    .schedule-event-workshop::before { background: #ff9fba; }
-    .schedule-event-coffee::before, .schedule-event-pausa::before { background: #ffcc62; }
-    .schedule-event-almoco::before { background: #7ec892; }
+    .schedule-event { grid-template-columns: minmax(0, 1fr); gap: .75rem; padding-bottom: 1.2rem; }
+    .schedule-time { width: max-content; min-width: 0; padding: .6rem .7rem; font-size: .88rem; }
+    .schedule-card { min-width: 0; min-height: 0; padding: .9rem 2.45rem .9rem .9rem; box-shadow: 3px 3px 0 #9535ee55; }
     .schedule-card h3 { font-size: 1rem; }
     .schedule-card p { font-size: .84rem; }
     .schedule-index { top: .65rem; right: .65rem; font-size: .9rem; }

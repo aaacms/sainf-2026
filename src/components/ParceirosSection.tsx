@@ -45,12 +45,12 @@ export default function ParceirosSection() {
     //   logo: '/parceiros/schermlogo.svg',
     //   link: 'https://scherm.com.br',
     // },
-    {
-      id: 8,
-      nome: "BitMarias",
-      logo: `${import.meta.env.BASE_URL}parceiros/bitmarias.png`,
-      link: null,
-    }
+    // {
+    //   id: 8,
+    //   nome: "BitMarias",
+    //   logo: `${import.meta.env.BASE_URL}parceiros/bitmarias.png`,
+    //   link: null,
+    // }
     // ,{
     //   id: 9,
     //   nome: "WoMakersCode",
@@ -59,6 +59,10 @@ export default function ParceirosSection() {
     // }
     
   ];
+
+  const partnerGridClass = parceiros.length <= 2
+    ? 'grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 max-w-[35rem] mx-auto'
+    : 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8';
 
   return (
     <section
@@ -83,7 +87,7 @@ export default function ParceirosSection() {
 
         {/* Grid de parceiros */}
         <div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8"
+          className={partnerGridClass}
           role="list"
           aria-label="Lista de parceiros do evento"
         >
@@ -155,7 +159,7 @@ export default function ParceirosSection() {
                 className="btn btn-primary btn-lg partner-cta-button gap-2"
               >
                 <Instagram size={24} />
-                Quer ser parceiro?
+                Vem ser parceiro!
               </a>
             </div>
           </div>
