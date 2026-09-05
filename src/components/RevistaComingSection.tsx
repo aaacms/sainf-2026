@@ -75,7 +75,7 @@ export default function RevistaComingSection() {
                   <h4 className="font-bold">Apresentação Obrigatória na SAINF</h4>
                   <p className="text-sm">
                     A publicação se iniciará com o envio de um <strong>resumo</strong> e sua apresentação 
-                    em <strong>pitch nos dias 4 e 5 de novembro</strong>, das <strong>13h às 13h30</strong>, 
+                    em <strong>pitch no dia 14 de novembro</strong>, das <strong>9h às 12h</strong>, 
                     com até <strong>5 minutos de apresentação</strong> por colaborador.
                   </p>
                 </div>
@@ -83,7 +83,7 @@ export default function RevistaComingSection() {
 
               <p className="text-base-content/80 leading-relaxed">
                 Os resumos aprovados serão enviados como artigos pré-aprovados posteriormente, com a 
-                data de submissão a partir de <strong>4 de dezembro</strong>, e publicados na revista ComInG.
+                data de submissão a partir de <strong>dezembro</strong>, e publicados na revista ComInG.
               </p>
 
               <div className="divider"></div>
@@ -170,20 +170,20 @@ export default function RevistaComingSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="coming-date-card">
                 <div className="text-sm text-base-content/60">Submissão de Resumos</div>
-                <div className="text-2xl font-bold">30 de outubro de 2026</div>
+                <div className="text-2xl font-bold">11 de setembro de 2026</div>
               </div>
               <div className="coming-date-card">
                 <div className="text-sm text-base-content/60">Notificação de Aceitação</div>
-                <div className="text-2xl font-bold">02 de novembro de 2026</div>
+                <div className="text-2xl font-bold">11 de outubro de 2026</div>
               </div>
               <div className="coming-date-card">
                 <div className="text-sm text-base-content/60">Apresentação em Pitch</div>
-                <div className="text-2xl font-bold">4 e 5 de novembro de 2026</div>
-                <div className="text-sm text-base-content/60">13h às 13h30 (5 min/colaborador)</div>
+                <div className="text-2xl font-bold">14 de outubro de 2026</div>
+                <div className="text-sm text-base-content/60">9h às 12h (5 min/colaborador)</div>
               </div>
               <div className="coming-date-card">
                 <div className="text-sm text-base-content/60">Envio da Versão em Artigo</div>
-                <div className="text-2xl font-bold">A partir de 10 de dezembro de 2026</div>
+                <div className="text-2xl font-bold">Até 15 de novembro de 2026</div>
               </div>
               <div className="coming-date-card md:col-span-2">
                 <div className="text-sm text-base-content/60">Publicação da ComInG</div>
@@ -212,25 +212,16 @@ export default function RevistaComingSection() {
                 </a>
               </div>
               <div className="flex flex-col gap-2">
-                <div className="font-bold">Rafaela da Rosa Soares</div>
+                <div className="font-bold">Luis Gustavo Werle Tozevich</div>
                 <div className="text-sm text-base-content/60">Divulgação e Organização</div>
                 <a 
-                  href="mailto:rdsoares@inf.ufsm.br" 
+                  href="mailto:lgtozevich@inf.ufsm.br" 
                   className="link link-primary text-sm"
                 >
-                  rdsoares@inf.ufsm.br
+                  lgtozevich@inf.ufsm.br
                 </a>
               </div>
-              <div className="flex flex-col gap-2">
-                <div className="font-bold">Jonathan Weber Nogueira</div>
-                <div className="text-sm text-base-content/60">Editor e Revisor</div>
-                <a 
-                  href="mailto:jwnogueira@inf.ufsm.br" 
-                  className="link link-primary text-sm"
-                >
-                  jwnogueira@inf.ufsm.br
-                </a>
-              </div>
+  
             </div>
           </div>
         </div>
@@ -248,7 +239,7 @@ export default function RevistaComingSection() {
                 Envie seu resumo através do formulário oficial e garanta sua participação na SAINF XIII!
               </p>
               <a 
-                href="https://forms.gle/tRcGSjJhzG8hJE226" 
+                href="https://docs.google.com/forms/d/e/1FAIpQLScTa8OPAOGHWuvqIUQinMZWNzQiINP7BKDbGsQMacoblPzZSA/viewform?usp=sharing&ouid=118110659113173141335" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn btn-primary btn-lg coming-cta-button gap-2"
@@ -257,7 +248,7 @@ export default function RevistaComingSection() {
                 Submeter Resumo Agora
               </a>
               <p className="coming-cta-deadline text-sm">
-                Prazo: até 30 de outubro de 2026
+                Prazo: até 12 de setembro de 2026
               </p>
             </div>
           </div>
