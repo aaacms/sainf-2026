@@ -75,7 +75,7 @@ export default function RevistaComingSection() {
                   <h4 className="font-bold">Apresentação Obrigatória na SAINF</h4>
                   <p className="text-sm">
                     A publicação se iniciará com o envio de um <strong>resumo</strong> e sua apresentação 
-                    em <strong>pitch no dia 14 de novembro</strong>, das <strong>9h às 12h</strong>, 
+                    em <strong>pitch no dia 14 de outubro</strong>, das <strong>9h às 12h</strong>, 
                     com até <strong>5 minutos de apresentação</strong> por colaborador.
                   </p>
                 </div>
