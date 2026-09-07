@@ -170,7 +170,7 @@ export default function RevistaComingSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="coming-date-card">
                 <div className="text-sm text-base-content/60">Submissão de Resumos</div>
-                <div className="text-2xl font-bold">11 de setembro de 2026</div>
+                <div className="text-2xl font-bold">12 de setembro de 2026</div>
               </div>
               <div className="coming-date-card">
                 <div className="text-sm text-base-content/60">Notificação de Aceitação</div>

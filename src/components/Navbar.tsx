@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { Link, useLocation } from 'react-router-dom';
 import { Instagram, BookOpen, Code2 } from 'lucide-react';
+import { MARATONA_ATIVA } from '../config/features';
 
 /**
  * Componente Navbar
@@ -68,14 +69,14 @@ export default function Navbar() {
                 <BookOpen size={18} />
                 Revista ComInG
               </Link>
-              <Link 
+              {MARATONA_ATIVA && <Link
                 to="/maratona" 
                 className="flex items-center gap-2 text-base font-medium hover:text-secondary transition-colors"
                 aria-label="Ir para página da Maratona de Programação"
               >
                 <Code2 size={18} />
                 Maratona
-              </Link>
+              </Link>}
               <a 
                 href="https://forms.gle/ohKJEorKojBA1UYF9" 
                 target="_blank"
@@ -110,14 +111,14 @@ export default function Navbar() {
                 <BookOpen size={18} />
                 Revista ComInG
               </Link>
-              <Link 
+              {MARATONA_ATIVA && <Link
                 to="/maratona" 
                 className="flex items-center gap-2 text-base font-medium hover:text-secondary transition-colors"
                 aria-label="Página da Maratona de Programação"
               >
                 <Code2 size={18} />
                 Maratona
-              </Link>
+              </Link>}
             </>
           )}
           <a 
@@ -206,7 +207,7 @@ export default function Navbar() {
                     <BookOpen size={24} />
                     <span>Revista ComInG</span>
                   </Link>
-                  <Link 
+                  {MARATONA_ATIVA && <Link
                     to="/maratona" 
                     className="flex items-center gap-2 text-lg font-medium hover:text-secondary transition-colors py-2"
                     onClick={closeMenu}
@@ -214,7 +215,7 @@ export default function Navbar() {
                   >
                     <Code2 size={24} />
                     <span>Maratona</span>
-                  </Link>
+                  </Link>}
                   <a 
                     href="https://forms.gle/ohKJEorKojBA1UYF9" 
                     target="_blank"
@@ -253,7 +254,7 @@ export default function Navbar() {
                     <BookOpen size={24} />
                     <span>Revista ComInG</span>
                   </Link>
-                  <Link 
+                  {MARATONA_ATIVA && <Link
                     to="/maratona" 
                     className="flex items-center gap-2 text-lg font-medium hover:text-secondary transition-colors py-2"
                     onClick={closeMenu}
@@ -261,7 +262,7 @@ export default function Navbar() {
                   >
                     <Code2 size={24} />
                     <span>Maratona</span>
-                  </Link>
+                  </Link>}
                 </>
               )}
               <a 
