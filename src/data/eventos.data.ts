@@ -26,7 +26,14 @@ export const cronogramaEventos: DiaEvento[] = [
         tipo: "credenciamento"
       },
       {
-        horario: "09:00 - 12:00",
+        horario: "09:00 - 09:20",
+        titulo: "Palestra de Abertura",
+        local: "Auditório do INPE",
+        descricao: "",
+        tipo: "palestra"
+      },
+      {
+        horario: "09:20 - 11:00",
         titulo: "Palestra de Abertura",
         local: "Auditório do INPE",
         descricao: "",
