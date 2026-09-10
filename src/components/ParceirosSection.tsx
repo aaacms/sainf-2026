@@ -27,12 +27,12 @@ export default function ParceirosSection() {
       logo: `${import.meta.env.BASE_URL}parceiros/logo-compact.png`,
       link: 'https://www.instagram.com/compact.jr/',
     },
-    // {
-    //   id: 5,
-    //   nome: "Casa do Pastel",
-    //   logo: '/parceiros/logoCasaDoPastel.png',
-    //   link: 'https://www.instagram.com/casadopastelpastelaria/',
-    // },
+    {
+      id: 5,
+      nome: "Dainf",
+      logo: `${import.meta.env.BASE_URL}parceiros/dainf_logo_colorida.png`,
+      link: 'https://www.instagram.com/dainf_ufsm/',
+    },
     // {
     //   id: 6,
     //   nome: "Mima Bolsas",
