@@ -13,13 +13,13 @@ export default function CronogramaSection() {
           {/* <p className="pixel-title mb-3 text-primary">// AGENDA</p> */}
           <h2 id="schedule-title" className="text-4xl md:text-5xl">Cronograma</h2>
           <p className="mt-7 text-lg text-base-content/70">Escolha um dia e acompanhe a programação da SAINF.</p>
-          <p className="mt-3 text-lg text-base-content/70"><strong>programação em atualização</strong></p>
+          {/* <p className="mt-3 text-lg text-base-content/70"><strong>programação em atualização</strong></p> */}
         </header>
 
-        {/* <div className="schedule-notice" role="status">
+        <div className="schedule-notice" role="status">
           <span className="schedule-notice-light" aria-hidden="true" />
-          <p><strong>programação em atualização</strong> — horários e atividades podem sofrer ajustes.</p>
-        </div> */}
+          <p><strong>programação em atualização</strong></p>
+        </div>
 
         {/* <div className="schedule-tabs" role="tablist" aria-label="Dias do evento">
           {cronogramaEventos.map((item, index) => (
