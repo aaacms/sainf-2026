@@ -21,12 +21,12 @@ export default function ParceirosSection() {
       logo: `${import.meta.env.BASE_URL}parceiros/petcc.png`,
       link: "https://www.instagram.com/petcc_ufsm/",
     },
-    // {
-    //   id: 4,
-    //   nome: "Torriani Restaurantes",
-    //   logo: '/parceiros/torriani.jpeg',
-    //   link: 'https://www.instagram.com/torriani.restaurantes?igsh=MW9keHQ3MGJhYW02Ng==',
-    // },
+    {
+      id: 4,
+      nome: "Compact Jr.",
+      logo: '/parceiros/logo-compact.png',
+      link: 'https://www.instagram.com/compact.jr/',
+    },
     // {
     //   id: 5,
     //   nome: "Casa do Pastel",
