@@ -24,7 +24,7 @@ export default function ParceirosSection() {
     {
       id: 4,
       nome: "Compact Jr.",
-      logo: '/parceiros/logo-compact.png',
+      logo: `${import.meta.env.BASE_URL}parceiros/logo-compact.png`,
       link: 'https://www.instagram.com/compact.jr/',
     },
     // {
