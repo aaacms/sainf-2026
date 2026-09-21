@@ -117,7 +117,7 @@
   .coming-alert { color: #24242b; border: 2px solid #24242b; border-radius: 0; background: #e7ddff; box-shadow: 4px 4px 0 #24242b; }
   .coming-area-badge { min-height: 3.4rem; justify-content: flex-start; color: #24242b; border: 2px solid #24242b; border-radius: 0; background: #fffdf8; box-shadow: 2px 2px 0 #9535ee; white-space: normal; }
   .coming-date-card { display: flex; flex-direction: column; gap: .5rem; padding: 1rem; border: 2px solid #24242b; background: #fffdf8; box-shadow: 3px 3px 0 #9535ee; }
-  .coming-date-card .text-2xl { color: #9535ee; font-family: 'Pixelify Sans', monospace; line-height: 1.2; }
+  .coming-date-card .coming-date-value { color: #9535ee; font-family: 'Space Grotesk', system-ui, sans-serif; font-size: clamp(1.1rem, 1.5vw, 1.25rem); line-height: 1.3; letter-spacing: normal; }
   .coming-cta { border: 2px solid #24242b; border-radius: 0; background: #fffdf8; box-shadow: 7px 7px 0 #9535ee; }
   .coming-cta .card-body { padding: clamp(2rem, 6vw, 4rem) 1.5rem; }
   .coming-cta-icon { display: grid; place-items: center; width: 4.5rem; height: 4.5rem; margin-bottom: 1.25rem; color: #fffdf8; background: #9535ee; border: 2px solid #24242b; box-shadow: 3px 3px 0 #24242b; }

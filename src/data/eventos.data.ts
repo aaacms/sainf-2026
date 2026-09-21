@@ -83,7 +83,7 @@ export const cronogramaEventos: DiaEvento[] = [
       {
         horario: "09:00 - 12:00",
         titulo: "Revista ComInG - Pitch dos Artigos",
-        local: "Sala a ser definida",
+        local: "Sala 355 - CT",
         descricao: "Veja as apresentações dos artigos que serão publicados na revista ComInG",
         tipo: "palestra"
       },
