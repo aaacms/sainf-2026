@@ -19,53 +19,53 @@ export const cronogramaEventos: DiaEvento[] = [
     data: "13/10/2026",
     eventos: [
       {
-        horario: "08:30 - 09:00",
+        horario: "09:00 - 09:30",
         titulo: "Credenciamento",
         local: "Auditório do INPE",
         descricao: "Recepção dos participantes e entrega de materiais",
         tipo: "credenciamento"
       },
       {
-        horario: "09:00 - 09:20",
-        titulo: "Palestra de Abertura",
+        horario: "09:30 - 10:20",
+        titulo: "Abertura",
         local: "Auditório do INPE",
         descricao: "",
         tipo: "palestra"
       },
       {
-        horario: "09:20 - 11:00",
-        titulo: "Palestra de Abertura",
+        horario: "10:20 - 10:50",
+        titulo: "Coffee Break",
+        local: "Auditório do INPE",
+        descricao: "",
+        tipo: "coffee"
+      },
+      {
+        horario: "10:40 - 12:00",
+        titulo: "Palestra 1",
+        local: "Em frente ao Auditório do INPE",
+        descricao: "Partiu coffe break =)",
+        tipo: "palestra"
+      },
+      {
+        horario: "14:00 - 15:15",
+        titulo: "Palestra 2",
         local: "Auditório do INPE",
         descricao: "",
         tipo: "palestra"
       },
       {
-        horario: "10:30 - 10:45",
+        horario: "15:15 - 15:45",
         titulo: "Coffee Break",
-        local: "Em frente ao Auditório do INPE",
-        descricao: "Partiu coffe break =)",
-        tipo: "coffee"
-      },
-      {
-        horario: "12:00 - 13:00",
-        titulo: "Almoço",
-        local: "RU",
-        descricao: "Aproveite para fazer a sua refeição",
-        tipo: "almoco"
-      },
-      {
-        horario: "13:00 - 14:00",
-        titulo: "Em preparação",
         local: "Auditório do INPE",
         descricao: "",
-        tipo: "workshop"
+        tipo: "coffee"
       },
       {
-        horario: "15:30 - 16:00",
-        titulo: "Coffee Break",
-        local: "Em frente ao Auditório do INPE",
-        descricao: "Partiu coffe break =)",
-        tipo: "coffee"
+        horario: "15:45 - 17:00",
+        titulo: "Palestra 3",
+        local: "Auditório do INPE",
+        descricao: "",
+        tipo: "palestra"
       }
     ]
   },
@@ -81,23 +81,37 @@ export const cronogramaEventos: DiaEvento[] = [
         tipo: "credenciamento"
       },
       {
-        horario: "09:00 - 12:00",
+        horario: "09:00 - 09:30",
+        titulo: "Abertura",
+        local: "Sala 355 - CT",
+        descricao: "",
+        tipo: "palestra"
+      },
+      {
+        horario: "09:30 - 10:20",
         titulo: "Revista ComInG - Pitch dos Artigos",
         local: "Sala 355 - CT",
         descricao: "Veja as apresentações dos artigos que serão publicados na revista ComInG",
         tipo: "palestra"
       },
       {
-        horario: "12:00 - 13:00",
-        titulo: "Almoço",
-        local: "RU",
-        descricao: "Bom almoço :)",
-        tipo: "almoco"
+        horario: "10:20 - 10:50",
+        titulo: "Coffee Break",
+        local: "Sala 355 - CT",
+        descricao: "",
+        tipo: "coffee"
       },
       {
-        horario: "13:00 - 14:00",
+        horario: "10:50 - 12:00",
+        titulo: "Revista ComInG - Pitch dos Artigos",
+        local: "Sala 355 - CT",
+        descricao: "Veja as apresentações dos artigos que serão publicados na revista ComInG",
+        tipo: "palestra"
+      },
+      {
+        horario: "14:00 - 15:15",
         titulo: "Maratona de SQL",
-        local: "Sala a ser definida",
+        local: "Sala 355 - CT",
         descricao: "",
         tipo: "workshop"
       }
@@ -115,38 +129,52 @@ export const cronogramaEventos: DiaEvento[] = [
         tipo: "credenciamento"
       },
       {
-        horario: "09:00 - 12:00",
-        titulo: "Painel de Egressos",
+        horario: "09:00 - 09:30",
+        titulo: "Abertura",
         local: "Auditório do INPE",
         descricao: "",
         tipo: "palestra"
       },
       {
-        horario: "10:30 - 10:45",
+        horario: "09:30 - 10:20",
+        titulo: "Palestra grupos de pesquisa",
+        local: "Auditório do INPE",
+        descricao: "",
+        tipo: "palestra"
+      },
+      {
+        horario: "10:20 - 10:50",
         titulo: "Coffee Break",
         local: "Em frente ao Auditório do INPE",
         descricao: "Agora está na hora do descanso e bora de coffe break!",
         tipo: "coffee"
       },
       {
-        horario: "12:00 - 13:00",
-        titulo: "Almoço",
-        local: "RU",
-        descricao: "Não esqueça de limpar o prato ;)",
+        horario: "10:50 - 12:00",
+        titulo: "Palestra 4",
+        local: "Sala",
+        descricao: "",
         tipo: "almoco"
       },
       {
-        horario: "14:00 - 18:30",
-        titulo: "Em preparação",
+        horario: "14:00 - 15:15",
+        titulo: "Palestra 5",
         local: "Auditório do INPE",
         descricao: "",
         tipo: "workshop"
       },
       {
-        horario: "15:00 - 15:30",
+        horario: "15:15 - 15:45",
         titulo: "Coffee Break",
         local: "Em frente ao Auditório do INPE",
         descricao: "Agora está na hora do descanso e bora de coffe break!",
+        tipo: "coffee"
+      },
+      {
+        horario: "15:45 - 17:00",
+        titulo: "Encerramento",
+        local: "Em frente ao Auditório do INPE",
+        descricao: "",
         tipo: "coffee"
       }
     ]
