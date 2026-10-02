@@ -1,10 +1,10 @@
-// import { useState } from 'react';
-// import { CalendarDays, MapPin, UserRound } from 'lucide-react';
-// import { cronogramaEventos } from '../data/eventos.data';
+import { useState } from 'react';
+import { CalendarDays, MapPin, UserRound } from 'lucide-react';
+import { cronogramaEventos } from '../data/eventos.data';
 
 export default function CronogramaSection() {
-  // const [activeDay, setActiveDay] = useState(0);
-  // const day = cronogramaEventos[activeDay];
+  const [activeDay, setActiveDay] = useState(0);
+  const day = cronogramaEventos[activeDay];
 
   return (
     <section id="cronograma" className="schedule-section px-5 py-20 md:px-8 md:py-28" aria-labelledby="schedule-title">
@@ -16,12 +16,12 @@ export default function CronogramaSection() {
           {/* <p className="mt-3 text-lg text-base-content/70"><strong>programação em atualização</strong></p> */}
         </header>
 
-        <div className="schedule-notice" role="status">
+        {/*
           <span className="schedule-notice-light" aria-hidden="true" />
           <p><strong>programação em atualização</strong></p>
-        </div>
+        */}
 
-        {/* <div className="schedule-tabs" role="tablist" aria-label="Dias do evento">
+        <div className="schedule-tabs" role="tablist" aria-label="Dias do evento">
           {cronogramaEventos.map((item, index) => (
             <button
               key={item.dia}
@@ -60,7 +60,7 @@ export default function CronogramaSection() {
               </article>
             </li>
           ))}
-        </ol> */}
+        </ol>
       </div>
     </section>
   );
