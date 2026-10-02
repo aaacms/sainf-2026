@@ -8,7 +8,7 @@ export default function Hero() {
 
         <div className="grid items-center gap-15 lg:gap-24 lg:grid-cols-[1.05fr_.95fr]">
           <div className="relative order-1 lg:order-1">
-            <img src={`${import.meta.env.BASE_URL}logo-sainf2.png`} alt="Ilustração da SAINF XIII" className="monitor-logo" />
+            <img src={`${import.meta.env.BASE_URL}logo-sainf-sem-fundo.png`} alt="Ilustração da SAINF XIII" className="monitor-logo" />
           </div>
 
           <div className="order-2 text-center lg:order-2 lg:text-left">
