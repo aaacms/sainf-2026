@@ -33,18 +33,18 @@ export default function ParceirosSection() {
       logo: `${import.meta.env.BASE_URL}parceiros/dainf_logo_colorida.png`,
       link: 'https://www.instagram.com/dainf_ufsm/',
     },
-    // {
-    //   id: 6,
-    //   nome: "Mima Bolsas",
-    //   logo: '/parceiros/mimabolsas.jpeg',
-    //   link: 'https://www.instagram.com/mima.bolsas/',
-    // },
-    // {
-    //   id: 7,
-    //   nome: "Scherm",
-    //   logo: '/parceiros/schermlogo.svg',
-    //   link: 'https://scherm.com.br',
-    // },
+    {
+      id: 6,
+      nome: "Irriga Global",
+      logo: '/parceiros/irriga-global.png',
+      link: 'https://www.instagram.com/irrigaglobal/',
+    },
+    {
+      id: 7,
+      nome: "Atitude Idiomas",
+      logo: '/parceiros/atitude-idiomas.png',
+      link: 'https://www.instagram.com/atitude_idiomas/',
+    },
     // {
     //   id: 8,
     //   nome: "BitMarias",
