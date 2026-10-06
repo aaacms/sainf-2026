@@ -36,21 +36,21 @@ export default function ParceirosSection() {
     {
       id: 6,
       nome: "Irriga Global",
-      logo: '/parceiros/irriga-global.png',
+      logo: `${import.meta.env.BASE_URL}parceiros/irriga-global.png`,
       link: 'https://www.instagram.com/irrigaglobal/',
     },
     {
       id: 7,
       nome: "Atitude Idiomas",
-      logo: '/parceiros/atitude-idiomas.png',
+      logo: `${import.meta.env.BASE_URL}parceiros/atitude-idiomas.png`,
       link: 'https://www.instagram.com/atitude_idiomas/',
     },
-    // {
-    //   id: 8,
-    //   nome: "BitMarias",
-    //   logo: `${import.meta.env.BASE_URL}parceiros/bitmarias.png`,
-    //   link: null,
-    // }
+    {
+      id: 8,
+      nome: "Scherm",
+      logo: `${import.meta.env.BASE_URL}parceiros/scherm.jpeg`,
+      link: 'https://www.instagram.com/schermbrasil/',
+    }
     // ,{
     //   id: 9,
     //   nome: "WoMakersCode",
