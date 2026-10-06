@@ -48,7 +48,7 @@ export default function ParceirosSection() {
     {
       id: 8,
       nome: "Scherm",
-      logo: `${import.meta.env.BASE_URL}parceiros/scherm.jpeg`,
+      logo: `${import.meta.env.BASE_URL}parceiros/scherm.png`,
       link: 'https://www.instagram.com/schermbrasil/',
     }
     // ,{
