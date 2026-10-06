@@ -35,15 +35,15 @@ export const cronogramaEventos: DiaEvento[] = [
       {
         horario: "10:20 - 10:50",
         titulo: "Coffee Break",
-        local: "Auditório do INPE",
-        descricao: "",
+        local: "Em frente ao Auditório do INPE",
+        descricao: "Partiu coffe break =)",
         tipo: "coffee"
       },
       {
         horario: "10:40 - 12:00",
         titulo: "Palestra 1",
-        local: "Em frente ao Auditório do INPE",
-        descricao: "Partiu coffe break =)",
+        local: "Auditório do INPE",
+        descricao: "",
         tipo: "palestra"
       },
       {
@@ -56,8 +56,8 @@ export const cronogramaEventos: DiaEvento[] = [
       {
         horario: "15:15 - 15:45",
         titulo: "Coffee Break",
-        local: "Auditório do INPE",
-        descricao: "",
+        local: "Em frente ao Auditório do INPE",
+        descricao: "Partiu coffe break =)",
         tipo: "coffee"
       },
       {
@@ -109,7 +109,7 @@ export const cronogramaEventos: DiaEvento[] = [
         tipo: "palestra"
       },
       {
-        horario: "14:00 - 15:15",
+        horario: "14:00 - 17:00",
         titulo: "Maratona de SQL",
         local: "Sala 355 - CT",
         descricao: "",
@@ -146,13 +146,13 @@ export const cronogramaEventos: DiaEvento[] = [
         horario: "10:20 - 10:50",
         titulo: "Coffee Break",
         local: "Em frente ao Auditório do INPE",
-        descricao: "Agora está na hora do descanso e bora de coffe break!",
+        descricao: "Bora de coffe break!",
         tipo: "coffee"
       },
       {
         horario: "10:50 - 12:00",
         titulo: "Palestra 4",
-        local: "Sala",
+        local: "Auditório do INPE",
         descricao: "",
         tipo: "almoco"
       },
@@ -167,7 +167,7 @@ export const cronogramaEventos: DiaEvento[] = [
         horario: "15:15 - 15:45",
         titulo: "Coffee Break",
         local: "Em frente ao Auditório do INPE",
-        descricao: "Agora está na hora do descanso e bora de coffe break!",
+        descricao: "Bora de coffe break!",
         tipo: "coffee"
       },
       {
@@ -175,7 +175,7 @@ export const cronogramaEventos: DiaEvento[] = [
         titulo: "Encerramento",
         local: "Em frente ao Auditório do INPE",
         descricao: "",
-        tipo: "coffee"
+        tipo: "palestra"
       }
     ]
   }

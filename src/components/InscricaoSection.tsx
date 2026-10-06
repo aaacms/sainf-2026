@@ -22,8 +22,12 @@ export default function InscricaoSection() {
           Não perca a oportunidade de participar da 13ª edição da SAINF! Faça sua inscrição através do nosso formulário e garanta sua participação no evento.
         </p>
 
+        <p className="text-base md:text-lg text-primary font-semibold mb-8 max-w-2xl mx-auto">
+          Participando do evento, o aluno garante um certificado de 20 horas válidas como ACG.
+        </p>
+
         <a 
-          href="https://forms.gle/7h2fzrZfLbiMHTDq6" 
+          href="https://forms.gle/MuCB4NYVDoz6D15r8"
           target="_blank" 
           rel="noopener noreferrer"
           className="btn btn-primary btn-lg form-cta-button"

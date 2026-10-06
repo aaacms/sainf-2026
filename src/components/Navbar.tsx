@@ -78,7 +78,7 @@ export default function Navbar() {
                 Maratona
               </Link>}
               <a 
-                href="https://forms.gle/ohKJEorKojBA1UYF9" 
+                href="https://forms.gle/MuCB4NYVDoz6D15r8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-base font-medium hover:text-primary transition-colors"
@@ -217,7 +217,7 @@ export default function Navbar() {
                     <span>Maratona</span>
                   </Link>}
                   <a 
-                    href="https://forms.gle/ohKJEorKojBA1UYF9" 
+                    href="https://forms.gle/MuCB4NYVDoz6D15r8"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-lg font-medium hover:text-primary transition-colors py-2"
